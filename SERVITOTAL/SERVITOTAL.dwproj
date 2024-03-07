@@ -1,0 +1,388 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>15.0.19623.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>SERVITOTAL.database</Name>
+    <FullPath>SERVITOTAL.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Servitotal.cube</Name>
+      <FullPath>Servitotal.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Servitotal.partitions</Name>
+          <FullPath>Servitotal.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Agente Servicio.dim</Name>
+      <FullPath>Agente Servicio.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Antiguedad Estado Boleta.dim</Name>
+      <FullPath>Antiguedad Estado Boleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Antiguedad Inventarios.dim</Name>
+      <FullPath>Antiguedad Inventarios.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Articulo.dim</Name>
+      <FullPath>Articulo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bodega Destino.dim</Name>
+      <FullPath>Bodega Destino.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bodega.dim</Name>
+      <FullPath>Bodega.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Causal Inservible.dim</Name>
+      <FullPath>Causal Inservible.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cliente.dim</Name>
+      <FullPath>Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Comision Vendedor.dim</Name>
+      <FullPath>Comision Vendedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Compania.dim</Name>
+      <FullPath>Compania.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Costo Unitario.dim</Name>
+      <FullPath>Costo Unitario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cuenta Contable.dim</Name>
+      <FullPath>Cuenta Contable.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Eficiencia 10 Dias.dim</Name>
+      <FullPath>Eficiencia 10 Dias.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Eficiencia 15 Días.dim</Name>
+      <FullPath>Eficiencia 15 Días.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Boleta.dim</Name>
+      <FullPath>Estado Boleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Final.dim</Name>
+      <FullPath>Estado Final.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Inicial.dim</Name>
+      <FullPath>Estado Inicial.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Recibe.dim</Name>
+      <FullPath>Estado Recibe.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Siguiente.dim</Name>
+      <FullPath>Estado Siguiente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Taller.dim</Name>
+      <FullPath>Estado Taller.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado.dim</Name>
+      <FullPath>Estado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Factor Inservible.dim</Name>
+      <FullPath>Factor Inservible.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Factura.dim</Name>
+      <FullPath>Factura.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Falla.dim</Name>
+      <FullPath>Falla.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Aprobación.dim</Name>
+      <FullPath>Fecha Aprobación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Cierre.dim</Name>
+      <FullPath>Fecha Cierre.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Compra.dim</Name>
+      <FullPath>Fecha Compra.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Creación Boleta.dim</Name>
+      <FullPath>Fecha Creación Boleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Creacion Documento.dim</Name>
+      <FullPath>Fecha Creacion Documento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Cuenta.dim</Name>
+      <FullPath>Fecha Cuenta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Entregado.dim</Name>
+      <FullPath>Fecha Entregado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Estado Boleta.dim</Name>
+      <FullPath>Fecha Estado Boleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Extragarantia.dim</Name>
+      <FullPath>Fecha Extragarantia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Finalizacion.dim</Name>
+      <FullPath>Fecha Finalizacion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Garantia.dim</Name>
+      <FullPath>Fecha Garantia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Guia.dim</Name>
+      <FullPath>Fecha Guia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Inclusion.dim</Name>
+      <FullPath>Fecha Inclusion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Liquidacion.dim</Name>
+      <FullPath>Fecha Liquidacion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Modificacion.dim</Name>
+      <FullPath>Fecha Modificacion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Recepción.dim</Name>
+      <FullPath>Fecha Recepción.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Ultima Salida.dim</Name>
+      <FullPath>Fecha Ultima Salida.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Ultimo Ingreso.dim</Name>
+      <FullPath>Fecha Ultimo Ingreso.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha.dim</Name>
+      <FullPath>Fecha.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Garantia.dim</Name>
+      <FullPath>Garantia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Acepta Cobro.dim</Name>
+      <FullPath>Indicador Acepta Cobro.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Cobrado.dim</Name>
+      <FullPath>Indicador Cobrado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Cubre Garantia.dim</Name>
+      <FullPath>Indicador Cubre Garantia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Danio.dim</Name>
+      <FullPath>Indicador Danio.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador DEW.dim</Name>
+      <FullPath>Indicador DEW.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Obsoleto.dim</Name>
+      <FullPath>Indicador Obsoleto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Reparacion Aplicada.dim</Name>
+      <FullPath>Indicador Reparacion Aplicada.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Boleta.dim</Name>
+      <FullPath>Número Boleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Numero Liquidacion KM.dim</Name>
+      <FullPath>Numero Liquidacion KM.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Liquidación MO.dim</Name>
+      <FullPath>Número Liquidación MO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Liquidación RE.dim</Name>
+      <FullPath>Número Liquidación RE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Transacción Boleta.dim</Name>
+      <FullPath>Número Transacción Boleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Proveedor.dim</Name>
+      <FullPath>Proveedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Repuesto.dim</Name>
+      <FullPath>Repuesto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Responsable Inservible.dim</Name>
+      <FullPath>Responsable Inservible.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rotación.dim</Name>
+      <FullPath>Rotación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Secuencia Garantia.dim</Name>
+      <FullPath>Secuencia Garantia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal.dim</Name>
+      <FullPath>Servitotal.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Taller.dim</Name>
+      <FullPath>Taller.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tecnico.dim</Name>
+      <FullPath>Tecnico.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tienda.dim</Name>
+      <FullPath>Tienda.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Garantia.dim</Name>
+      <FullPath>Tipo Garantia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Marca Rep.dim</Name>
+      <FullPath>Tipo Marca Rep.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Marca.dim</Name>
+      <FullPath>Tipo Marca.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Movimiento Ventas.dim</Name>
+      <FullPath>Tipo Movimiento Ventas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Movimiento.dim</Name>
+      <FullPath>Tipo Movimiento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Reparación.dim</Name>
+      <FullPath>Tipo Reparación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Rotación.dim</Name>
+      <FullPath>Tipo Rotación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Servicio.dim</Name>
+      <FullPath>Tipo Servicio.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tramite.dim</Name>
+      <FullPath>Tramite.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Transacción Movimiento.dim</Name>
+      <FullPath>Transacción Movimiento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Transportista.dim</Name>
+      <FullPath>Transportista.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Usuario Aprueba.dim</Name>
+      <FullPath>Usuario Aprueba.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Usuario Entrega.dim</Name>
+      <FullPath>Usuario Entrega.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Usuario.dim</Name>
+      <FullPath>Usuario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendedor.dim</Name>
+      <FullPath>Vendedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Días en Trámite.dim</Name>
+      <FullPath>Días en Trámite.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Antiguedad sin Fallo.dim</Name>
+      <FullPath>Antiguedad sin Fallo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Stock.dim</Name>
+      <FullPath>Indicador Stock.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DWH.ds</Name>
+      <FullPath>DWH.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>vDWH.dsv</Name>
+      <FullPath>vDWH.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DWH</Id>
+            <Name>DWH</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=DWH</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DWH</Id>
+            <Name>DWH</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

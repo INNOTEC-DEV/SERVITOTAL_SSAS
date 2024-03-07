@@ -1,0 +1,229 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ba1a4068-b748-4885-8d1e-d33e1c85187b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Taller</ID>
+  <Name>Taller</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1303" scrolltop="-4775" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7594" y="13123" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_TALLER" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4763" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009b120000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="serv_TD_TALLER" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1303</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4775</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="060c50a7-138d-4645-b017-a1c0d9eae9e9">
+    <DataSourceViewID>DWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="341d53a9-187b-43b2-888d-3b6b121e380d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7e2bbd07-16bd-4d73-a108-62a3dcbd863c">
+      <ID>ID TALLER</ID>
+      <Name>ID TALLER</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>637</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13e7ce02-0eb6-4fe8-b9dc-fe96908f1dc3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ecf3a34f-217b-433d-821a-6b77325f1b96">
+            <TableID>serv_TD_TALLER</TableID>
+            <ColumnID>ID_TALLER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ce48beb9-ba86-47ba-84a6-df2e33309a44">
+          <AttributeID>COD TALLER</AttributeID>
+          <Name>Código Taller</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c0039bd8-fbe8-4d34-b0f1-c11aa619f447">
+          <AttributeID>DES TALLER</AttributeID>
+          <Name>Descripción Taller</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="922b4977-7b69-434f-91d5-e5afb34f4022">
+          <AttributeID>DES DIRECCION TALLER</AttributeID>
+          <Name>Descripción Dirección Taller</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="86d27ee7-3874-4248-971f-41d3e0d44353">
+          <AttributeID>DES TELEFONO</AttributeID>
+          <Name>Descripción Teléfono</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="271dea84-95b1-4e56-849e-d4f305c5d3ef">
+          <AttributeID>DES EMAIL</AttributeID>
+          <Name>Descripción Email</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61ef7574-7a1b-4fce-ab2c-119c779cd7a3">
+      <ID>COD TALLER</ID>
+      <Name>Código Taller</Name>
+      <EstimatedCount>637</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24ba3aa9-7761-4478-88c6-be989e984b51">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc4db894-0f7b-438a-b0c9-0ec8ee76816c">
+            <TableID>serv_TD_TALLER</TableID>
+            <ColumnID>COD_TALLER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="44786766-1ba9-4f5b-b34c-1d048ef3d2a0">
+      <ID>DES TALLER</ID>
+      <Name>DES_TALLER</Name>
+      <EstimatedCount>620</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e54f6ba7-539f-4739-8b24-ccd059e55cd1">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e77f6e0-42f9-4144-86e3-986779844d00">
+            <TableID>serv_TD_TALLER</TableID>
+            <ColumnID>DES_TALLER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="84c859e7-a08d-4098-8c2d-43a940549a61">
+      <ID>DES DIRECCION TALLER</ID>
+      <Name>DES_DIRECCION_TALLER</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd030a5c-38f4-4621-a16b-2894073f4dd5">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f445db5d-db6a-4ada-82b7-dbc6f7e4b961">
+            <TableID>serv_TD_TALLER</TableID>
+            <ColumnID>DES_DIRECCION_TALLER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="79d3f055-b37a-40c4-a6f4-cb7f63ce3349">
+      <ID>DES TELEFONO</ID>
+      <Name>DES_TELEFONO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d9ade2b-3632-4af7-9bb4-de10f94d71e9">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="545ec37b-321d-497f-b90d-c219187db8d8">
+            <TableID>serv_TD_TALLER</TableID>
+            <ColumnID>DES_TELEFONO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b2b38232-4865-48cd-8116-299949ce3c75">
+      <ID>DES EMAIL</ID>
+      <Name>DES_EMAIL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5671ac31-79d3-4da0-b8e8-0fd09df6fba7">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a29bf6e-fbd3-432c-b0e4-881e970e9bb4">
+            <TableID>serv_TD_TALLER</TableID>
+            <ColumnID>DES_EMAIL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c63c8759-eed3-4143-949c-0a8446d1f7a0">
+      <ID>Hierarchy</ID>
+      <Name>Taller</Name>
+      <Levels>
+        <Level dwd:design-time-name="b7007b74-4414-4357-917c-74807547783f">
+          <ID>Taller</ID>
+          <Name>Taller</Name>
+          <SourceAttributeID>DES TALLER</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

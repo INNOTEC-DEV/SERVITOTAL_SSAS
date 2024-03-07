@@ -1,0 +1,340 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>DWH</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=DWH</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Agente Servicio</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ANTIGUEDAD ESTADO BOLETA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Antiguedad Inventarios</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Articulo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Bodega Destino</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Bodega</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Causal Inservible</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Comision Vendedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Compania</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Costo Unitario</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Cuenta Contable</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Eficiencia 10 Dias</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Eficiencia 15 Días</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Boleta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ESTADO FINAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Inicial</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ESTADO RECIBE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ESTADO SIGUIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Taller</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Factor Inservible</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Factura</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Falla</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA APROBACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Cierre</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Compra</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Creación Boleta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Creacion Documento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Cuenta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Entregado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Estado Boleta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Extragarantia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Feha Finalizacion</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Garantia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Guia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Inclusion</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Liquidacion</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Modificacion</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Recepción</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Ultima Salida</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Ultimo Ingreso</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Garantia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Acepta Cobro</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Cobrado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Cubre Garantia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Danio</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador DEW</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Obsoleto</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Reparacion Aplicada</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Transacción Boleta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Numero Liquidacion KM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Liquidación MO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Liquidación RE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Boleta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Proveedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Repuesto</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Responsable Inservible</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Rotación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Secuencia Garantia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Servitotal</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Taller</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tecnico</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tienda</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Garantia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Marca Rep</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Marca</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Movimiento Ventas</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Movimiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Reparación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Rotación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Servicio</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tramite</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Transacción Movimiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Transportista</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Usuario Aprueba</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Usuario Entrega</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Usuario</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Vendedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Días en Trámite</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Antiguedad sin Fallo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Stock</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Servitotal</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>TH GASTOS REPARACION</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_GASTOS_REPARACION_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH INVENTARIO</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_INVENTARIO_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH VENTAS</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_VENTAS_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH REPUESTOS</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_REPUESTOS_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH GASTO</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_GASTO_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_PRESUPUESTO_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH BOLETA</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_BOLETA_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH GUIAS BOLETA</ID>
+            <Partitions>
+              <Partition>
+                <ID>TH_GUIAS_BOLETA_202001</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

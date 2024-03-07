@@ -1,0 +1,250 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="78c93600-c7df-4881-b652-764deae24ad0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Bodega Destino</ID>
+  <Name>Bodega Destino</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5232" scrolltop="-16021" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6879" y="22040" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BODEGA_DESTINO" left="-4346" top="-15558" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5186" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000421400009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BODEGA_DESTINO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5232</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-16021</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-4346</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-15558</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a01922b6-608b-4365-85b3-38af0de24350">
+    <DataSourceViewID>DWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="22689445-1c90-4c7d-b82d-f20cbdf7a157">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1e33149e-9db6-4ac5-8147-7e775f669a4f">
+      <ID>ID BODEGA DESTINO</ID>
+      <Name>ID_BODEGA_DESTINO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>1596</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b07ea34-1016-4532-97d3-60010ffb8ae1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03fd0529-0a31-4153-a9de-4e2b6c7a8ede">
+            <TableID>BODEGA_DESTINO</TableID>
+            <ColumnID>ID_BODEGA_DESTINO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0ab7054a-e2a2-4570-9aed-130798f54a7c">
+          <AttributeID>COD BODEGA DESTINO</AttributeID>
+          <Name>Código Bodega Destino</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a2e2ffc6-3844-4154-a528-62e811bc9070">
+          <AttributeID>COD COMPANIA</AttributeID>
+          <Name>Código Compañia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="668ca7a8-c81e-4536-a759-dba8739e6efc">
+          <AttributeID>CENTRO BODEGA DESTINO</AttributeID>
+          <Name>Centro Bodega Destino</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c5ff1a2e-8686-4db4-b4a0-5d85b257ead6">
+          <AttributeID>TIPO BODEGA DESTINO</AttributeID>
+          <Name>Tipo Bodega Destino</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bf703c78-a635-4fe4-98ae-b39103889e2e">
+          <AttributeID>DES BODEGA DESTINO</AttributeID>
+          <Name>Bodega Destino</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ea994c36-073f-4d30-aa51-70ff84e9a604">
+          <AttributeID>TSTAMP</AttributeID>
+          <Name>TSTAMP</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec4e65ce-74de-4813-b030-acf21ee20211">
+      <ID>COD BODEGA DESTINO</ID>
+      <Name>Codigo Bodega Destino</Name>
+      <EstimatedCount>1595</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e7bc3b24-7aa8-43a4-91dd-e64a504213bf">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af5243ce-fb33-460d-a2c4-7e38122f6fc9">
+            <TableID>BODEGA_DESTINO</TableID>
+            <ColumnID>COD_BODEGA_DESTINO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3909a49e-e883-4717-bc28-9308e3111606">
+      <ID>COD COMPANIA</ID>
+      <Name>COD_COMPANIA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9ae87bc-60a2-491d-8ac7-ff2b9f13ddb2">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84b842b6-6124-41ed-91a3-8a98272e6311">
+            <TableID>BODEGA_DESTINO</TableID>
+            <ColumnID>COD_COMPANIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fdadfc31-92f9-407c-a66f-dfecf4faf9d2">
+      <ID>CENTRO BODEGA DESTINO</ID>
+      <Name>CENTRO_BODEGA_DESTINO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e2e05f2-ab65-4813-9a30-b1411d63ce48">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24d33a4d-003a-4563-a748-785029f9937c">
+            <TableID>BODEGA_DESTINO</TableID>
+            <ColumnID>CENTRO_BODEGA_DESTINO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="389273c5-d7ec-48ed-9b51-f300eb8584bc">
+      <ID>TIPO BODEGA DESTINO</ID>
+      <Name>TIPO_BODEGA_DESTINO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91bd5e41-2fa2-4a15-b44c-f9f40880fea9">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2478ebc5-7e51-4f55-96d7-52830316c316">
+            <TableID>BODEGA_DESTINO</TableID>
+            <ColumnID>TIPO_BODEGA_DESTINO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bcaab222-62e1-46c6-a62b-6cb742af915f">
+      <ID>DES BODEGA DESTINO</ID>
+      <Name>DES_BODEGA_DESTINO</Name>
+      <EstimatedCount>1582</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34510e48-4d72-4003-a8b4-038a20560826">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="654581e5-f32b-4b1d-b4ea-831cc8b34e9e">
+            <TableID>BODEGA_DESTINO</TableID>
+            <ColumnID>DES_BODEGA_DESTINO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6ea4db31-ba55-44b9-80f1-8696fd1108e5">
+      <ID>TSTAMP</ID>
+      <Name>TSTAMP</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1abecec-d188-4d7d-924e-dc2e189418a7">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b57f5aed-003c-49aa-8c5f-f4b5490f474e">
+            <TableID>BODEGA_DESTINO</TableID>
+            <ColumnID>TSTAMP</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="dce5db36-e1ca-4f02-aac1-fd771f08c5e9">
+      <ID>Hierarchy</ID>
+      <Name>Bodega de Destino</Name>
+      <Levels>
+        <Level dwd:design-time-name="d358bfff-aeb7-4bfa-b0c9-87edb415ae14">
+          <ID>DES_BODEGA_DESTINO</ID>
+          <Name>Bodega de Destino</Name>
+          <SourceAttributeID>DES BODEGA DESTINO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,482 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3d80ac43-a8a6-4dc6-87e4-06a25f65d98c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TD FECHA APROBACION</ID>
+  <Name>Fecha Aprobación</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2506" scrolltop="-8520" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5001" y="13123" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_FECHA_APROBACION" left="-1382" top="-7911" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4604" height="7937" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc110000011f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="serv_TD_FECHA_APROBACION" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2506</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8520</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1382</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-7911</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dcb6e311-6019-43e6-873d-892a05b98870">
+    <DataSourceViewID>DWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="908694f0-6654-4690-91ad-431e8d585850">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9dd922dd-8af5-44f7-ae7c-eb9571eafa28">
+      <ID>ID FECHA APROBACION</ID>
+      <Name>ID FECHA APROBACION</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>1893</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="613ce274-9101-4930-a851-a3eb028b6adf">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a3ba3b8-a83a-482b-a7fb-c5a1d5437864">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>ID_FECHA_APROBACION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="dbf2be82-b59e-4efc-881f-e0e6c3eb1ce7">
+          <AttributeID>NUM MES</AttributeID>
+          <Name>NUM MES</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27cbb95e-e130-44b7-b622-95d788024875">
+          <AttributeID>NUM DIA SEMANA</AttributeID>
+          <Name>NUM DIA SEMANA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="326b569c-d9d8-470b-9de4-9a6969023c58">
+          <AttributeID>ANIO</AttributeID>
+          <Name>ANIO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="669d9b52-f08a-4345-b5d2-ff7e408c5462">
+          <AttributeID>MES</AttributeID>
+          <Name>MES</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a5ae0472-e1d4-4303-a69f-5d937c755e57">
+          <AttributeID>DIA</AttributeID>
+          <Name>DIA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="07e5cedf-cafb-4e73-8872-27b5e4c1bf68">
+          <AttributeID>DES SEMESTRE</AttributeID>
+          <Name>DES SEMESTRE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4babda98-590d-477a-b958-dd200474e69c">
+          <AttributeID>DES TRIMESTRE</AttributeID>
+          <Name>DES TRIMESTRE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="daf39170-33e6-44b9-af62-5731e156aac9">
+          <AttributeID>DES MES</AttributeID>
+          <Name>DES MES</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee5e936f-3e0f-4ba6-a41b-ca7d8a085f73">
+          <AttributeID>DES SEMANA</AttributeID>
+          <Name>DES SEMANA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="76e508ff-4ee5-4ca4-9f34-8b195c5d82dd">
+          <AttributeID>DES DIA SEMANA</AttributeID>
+          <Name>DES DIA SEMANA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e04c2492-ebfb-4a57-9e01-dde34914ca86">
+          <AttributeID>PERIODO</AttributeID>
+          <Name>PERIODO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80775e25-4396-40a7-8092-1df1083260f5">
+          <AttributeID>TSTAMP</AttributeID>
+          <Name>TSTAMP</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f394aa1-45ab-4f44-9ad1-f7a16a2e922c">
+      <ID>NUM MES</ID>
+      <Name>NUM MES</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cd6f382-a423-4ab9-b419-8d9a9d0ac6ca">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="77d0d3aa-bc2a-4d6c-a753-086816108d83">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>NUM_MES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="88aac9c8-a77c-402d-987d-1b23da29b32a">
+      <ID>NUM DIA SEMANA</ID>
+      <Name>NUM DIA SEMANA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="522a98f4-840b-4d39-90f5-bfae649577fa">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a63dd25-222a-4745-a03f-ac44b1f0f625">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>NUM_DIA_SEMANA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="986550af-91e1-4489-beda-662f56992172">
+      <ID>ANIO</ID>
+      <Name>01 - Año</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c273c452-8ef9-41f6-a9a2-25bb6c20d419">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2afb74d6-7b50-4cba-a2cb-b85560e959a7">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>ANIO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2fe731f-3c35-4da0-93b6-4a3a68e1c954">
+      <ID>MES</ID>
+      <Name>MES</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3d05e3f6-08e0-4118-a871-25f5ae9b2d50">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10406670-de40-44f8-a38e-69edc4a3083a">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>MES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e88a9157-6355-4b99-924f-48aa9cd641fe">
+      <ID>DIA</ID>
+      <Name>03 - Día</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55cf727e-9984-4930-aa3a-f37b245c7b7a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef10385d-2908-4a5d-b3ba-ebdb820956f6">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>ID_FECHA_APROBACION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="003eaf84-71fb-4761-b21d-f8ca5521c8fb">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c232905e-107d-49c9-bd02-86e20e7e0fae">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>DIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="88f1c527-28e6-4106-84dc-e4aa79d94765">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8483a30c-9bb0-46e2-b599-a4bf37a9b0ba">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>DIA</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="383852ab-372c-4879-a52e-6e109b193d70">
+      <ID>DES SEMESTRE</ID>
+      <Name>DES SEMESTRE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af4b2cf6-2c7d-4ae3-926c-4152f331073b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f29b469-fa31-4b42-a3f2-5375bda2e72b">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>NUM_SEMANA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2592f2c2-b959-4664-997f-8fd30c25610a">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="46c19ce6-aac3-40f5-8be9-7c97de61bfd9">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>DES_SEMANA</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="925d684e-3dea-4b9c-8803-c585dca53c63">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="559388c9-da97-4c06-9773-10aa62ace153">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>DES_SEMANA</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c92db643-46e5-4d28-b71c-42406731c748">
+      <ID>DES TRIMESTRE</ID>
+      <Name>DES TRIMESTRE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8bdef3ca-cfdd-4c25-baf8-5c5abe97089b">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4803931-ef0a-4379-a27b-15c16e980ba0">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>DES_TRIMESTRE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f7bb4b60-17cb-4d7c-b7d3-b4985a93cbbf">
+      <ID>DES MES</ID>
+      <Name>02 - Mes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="adc4a718-214f-4ab9-b0f8-dcd965921cd8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ea89d32-56f7-4f47-895e-d4e889a56601">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>PERIODO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="02d6677a-5a80-4995-a618-55fe582696f7">
+        <DataType>WChar</DataType>
+        <DataSize>7</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="004831e5-b027-4a91-a2e5-d71526ff802a">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>MES</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="681c7661-dcd3-46c5-a7fd-7f3976584333">
+        <DataType>WChar</DataType>
+        <DataSize>7</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="aab82680-590c-4f03-b9fe-631da0d8bc8b">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>MES</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="09c5b68a-fd1b-4100-a1d8-562f3d5627ae">
+      <ID>DES SEMANA</ID>
+      <Name>DES SEMANA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c51eed2-9627-4c4f-8e86-de7b0d641ffa">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44dac82d-b2a6-49e3-a68a-67df5b19c9bc">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>NUM_SEMANA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e6c87e98-e193-464b-8503-6e58d436cd63">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="53d34ab0-4e33-4158-a7b4-20bea29d26cf">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>DES_SEMANA</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="d24397d6-4bdc-4443-aead-bf36c9bdef43">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b7812967-1ec1-4e53-85af-8c81c7d9b45f">
+          <TableID>serv_TD_FECHA_APROBACION</TableID>
+          <ColumnID>DES_SEMANA</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0b5c1bf8-facf-4173-9edd-cb05bb0dffe4">
+      <ID>DES DIA SEMANA</ID>
+      <Name>DES DIA SEMANA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6f818be-4cd0-42af-bee9-ffe3ca7400e2">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4384c670-1979-456d-8fec-e0207bed0c62">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>DES_DIA_SEMANA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d8e3b3a2-6d6f-4391-ac1b-134fbdeac4a2">
+      <ID>PERIODO</ID>
+      <Name>PERIODO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30cb791c-3fff-4904-b5be-3d9a7b773e7d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ebadfe8-f9c4-4979-b85c-a02af4030c7a">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>PERIODO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d2dd83cb-c210-4248-878d-f7999b18c4d7">
+      <ID>TSTAMP</ID>
+      <Name>TSTAMP</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d911bf0a-ba59-4cde-a87e-b783c8613da1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f6ecd38-0cbb-4131-b5f2-3fe7327bc7e6">
+            <TableID>serv_TD_FECHA_APROBACION</TableID>
+            <ColumnID>TSTAMP</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c9fbf17a-d775-41d0-881a-e018f9990a24">
+      <ID>Hierarchy</ID>
+      <Name>Fecha Aprobación</Name>
+      <Levels>
+        <Level dwd:design-time-name="7619e195-7cd8-449d-b1d8-7dad41e6db53">
+          <ID>01 - Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>ANIO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d2415c60-f39d-4ae2-88f8-8af0fc8e4c4f">
+          <ID>DES SEMESTRE</ID>
+          <Name>Semestre</Name>
+          <SourceAttributeID>DES SEMESTRE</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0e9b6193-ed39-46b4-a18c-3045332aa593">
+          <ID>DES TRIMESTRE</ID>
+          <Name>Trimestre</Name>
+          <SourceAttributeID>DES TRIMESTRE</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="148a8730-bcc4-4fb5-ba17-9f10e48bbeaf">
+          <ID>02 - Mes</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>DES MES</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8c7235dd-5f1b-44e1-b52d-70c7ef69cb19">
+          <ID>DES SEMANA</ID>
+          <Name>Semana</Name>
+          <SourceAttributeID>DES SEMANA</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="82e40001-619e-4f7f-9fce-01f1b4be44d2">
+          <ID>03 - Día</ID>
+          <Name>Día</Name>
+          <SourceAttributeID>DIA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="340b3102-e174-4d6b-8945-464296de0673">
+      <ID>Hierarchy 1</ID>
+      <Name>Fecha Aprobación - Mes</Name>
+      <Levels>
+        <Level dwd:design-time-name="c9a7242e-c241-49f5-b7bf-dc54782de0bd">
+          <ID>01 - Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>ANIO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="56392279-ac95-4d58-afc8-e893d14cd507">
+          <ID>02 - Mes</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>DES MES</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ad831b90-4008-49b0-95ab-bbc2ec93b7bf">
+          <ID>03 - Día</ID>
+          <Name>Día</Name>
+          <SourceAttributeID>DIA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
