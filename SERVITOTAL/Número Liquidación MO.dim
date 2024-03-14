@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="06462535-d608-43f9-b2a0-406cdeb27a08" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Número Liquidación MO</ID>
   <Name>Número Liquidación MO</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-04-04T14:55:14.593333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:36.846667Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,40 +66,51 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3c936943-de6d-4dc3-a556-40f53c4365f9">
+  <LastProcessed>2024-03-14T13:43:07.53Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="7c13cf4f-3950-4291-837a-c83246debf81">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="c230780d-4e84-448f-8608-ca4c081c7c87">
+    <Attribute>
       <ID>ID NUMERO LIQUIDACION MO</ID>
       <Name>ID NUMERO LIQUIDACION MO</Name>
       <Usage>Key</Usage>
       <EstimatedCount>6905</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e07ca792-72d7-4666-8f6c-abbaa9ba2330">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d0d319c-fcff-4d79-a897-e10d67d4bd2c">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_NUMERO_LIQUIDACION_MO</TableID>
             <ColumnID>ID_NUMERO_LIQUIDACION_MO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_NUMERO_LIQUIDACION_MO</TableID>
+          <ColumnID>ID_NUMERO_LIQUIDACION_MO</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="c11e9626-18bb-4ae8-935a-b411c63b9fbe">
+        <AttributeRelationship>
           <AttributeID>COD NUMERO LIQUIDACION MO</AttributeID>
           <Name>Código Número Liquidación MO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2aa38e0c-0665-4469-b5c8-67401acf876e">
+        <AttributeRelationship>
           <AttributeID>DES NUMERO LIQUIDACION MO</AttributeID>
           <Name>Número Liquidación MO</Name>
         </AttributeRelationship>
@@ -109,38 +120,53 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d9a97841-cca0-4d77-adb4-c4a1ead7b634">
+    <Attribute>
       <ID>COD NUMERO LIQUIDACION MO</ID>
       <Name>COD_NUMERO_LIQUIDACION_MO</Name>
       <EstimatedCount>6905</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8964428f-af21-408f-b0cf-37f8553d9e83">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a815814-8286-4bfb-91b1-3950187dd834">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_NUMERO_LIQUIDACION_MO</TableID>
             <ColumnID>COD_NUMERO_LIQUIDACION_MO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_NUMERO_LIQUIDACION_MO</TableID>
+          <ColumnID>COD_NUMERO_LIQUIDACION_MO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c082c9bb-6095-441e-9c38-53fcff07d9ff">
+    <Attribute>
       <ID>DES NUMERO LIQUIDACION MO</ID>
       <Name>DES_NUMERO_LIQUIDACION_MO</Name>
       <EstimatedCount>6905</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f71c8d76-7f1d-43fb-acd7-c8526cbab266">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>500</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8dbab1ac-4e2c-427b-9824-4c40e3f85eb3">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_NUMERO_LIQUIDACION_MO</TableID>
             <ColumnID>DES_NUMERO_LIQUIDACION_MO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>500</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_NUMERO_LIQUIDACION_MO</TableID>
+          <ColumnID>DES_NUMERO_LIQUIDACION_MO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -148,11 +174,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="1c8c0d06-3543-487c-9ce7-3648870e56e7">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Número Liquidación MO</Name>
       <Levels>
-        <Level dwd:design-time-name="b211abfb-c3f5-41db-907d-1b95a9359d9f">
+        <Level>
           <ID>Código Número Liquidación MO</ID>
           <Name>Número Liquidación MO</Name>
           <SourceAttributeID>COD NUMERO LIQUIDACION MO</SourceAttributeID>
@@ -160,5 +186,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

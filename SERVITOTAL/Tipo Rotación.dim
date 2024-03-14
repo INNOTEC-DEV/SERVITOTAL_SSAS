@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6a7695ef-eef1-49d7-af69-a5212099075c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Tipo Rotación</ID>
   <Name>Tipo Rotación</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.896667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.263333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1b3c4f9c-c003-4811-b26c-c0fc3b943ff5">
+  <LastProcessed>2024-03-14T13:43:07.463333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="25635a36-5c17-4cd0-9aeb-21b4160b7e94">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="d07ae4d8-dcd9-458d-bc63-7f4c71646103">
+    <Attribute>
       <ID>ID TIPO ROTACION</ID>
       <Name>ID TIPO ROTACION</Name>
       <Usage>Key</Usage>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c46fa402-9a57-4bc2-9fbc-66c27ec006ad">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec0a12fe-f3c0-4f45-a318-9e729819f651">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_TIPO_ROTACION</TableID>
             <ColumnID>ID_TIPO_ROTACION</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_TIPO_ROTACION</TableID>
+          <ColumnID>ID_TIPO_ROTACION</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a5c2d466-12b2-4610-8a2b-c0d42348a84c">
+        <AttributeRelationship>
           <AttributeID>COD TIPO ROTACION</AttributeID>
           <Name>Código Tipo Rotación</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3beea214-8408-4342-a115-394f799348f5">
+        <AttributeRelationship>
           <AttributeID>DES TIPO ROTACION</AttributeID>
           <Name>Descripción Tipo Rotación</Name>
         </AttributeRelationship>
@@ -108,39 +118,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c42196f2-747e-47cf-b9b4-c4c7c2d5fbb1">
+    <Attribute>
       <ID>COD TIPO ROTACION</ID>
       <Name>COD_TIPO_ROTACION</Name>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b9093424-6a93-4302-93d9-0e6c69eaa681">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>2</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="115151e8-565e-4960-9c72-abc2cb9d5fb7">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_TIPO_ROTACION</TableID>
             <ColumnID>COD_TIPO_ROTACION</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_TIPO_ROTACION</TableID>
+          <ColumnID>COD_TIPO_ROTACION</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ce85e470-35e9-4244-9ad5-ef01c9c574c9">
+    <Attribute>
       <ID>DES TIPO ROTACION</ID>
       <Name>DES_TIPO_ROTACION</Name>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b0bf07a6-8073-43a5-a9d2-d330f8e77481">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd5c813f-8e75-428a-aa1c-f354eba1eac6">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_TIPO_ROTACION</TableID>
             <ColumnID>DES_TIPO_ROTACION</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_TIPO_ROTACION</TableID>
+          <ColumnID>DES_TIPO_ROTACION</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -148,11 +174,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="80d05500-8f4e-4c87-9cef-7c6960bd04fd">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Tipo Rotación</Name>
       <Levels>
-        <Level dwd:design-time-name="4b4a03c4-e847-4550-88dd-f9765b806503">
+        <Level>
           <ID>Tipo Rotación</ID>
           <Name>Tipo Rotación</Name>
           <SourceAttributeID>DES TIPO ROTACION</SourceAttributeID>
@@ -160,5 +186,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

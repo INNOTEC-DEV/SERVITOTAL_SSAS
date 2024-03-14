@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="95fbc86b-551a-415b-b731-af179ae7d374" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Feha Finalizacion</ID>
   <Name>Fecha Finalizacion</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.95Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:36.133333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,83 +66,93 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="75a1fc62-b211-4491-8620-319ccbf5b5d0">
+  <LastProcessed>2024-03-14T13:42:48.943333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="06edfb03-3427-4804-bbd1-cf0939413dfe">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="0829337d-6632-443b-9484-7dd8edd349b6">
+    <Attribute>
       <ID>ID FECHA FINALIZACION</ID>
       <Name>ID FECHA FINALIZACION</Name>
       <Usage>Key</Usage>
       <EstimatedCount>1393</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f616c96d-7a4a-46b3-8639-906c77b2c319">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b949fdb9-5ddd-47a6-9615-ce33fbbf7884">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>ID_FECHA_FINALIZACION</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>ID_FECHA_FINALIZACION</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="cad1897e-5c3c-4d9b-9c7d-b15ad8809089">
+        <AttributeRelationship>
           <AttributeID>NUM MES</AttributeID>
           <Name>NUM MES</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="98378cf6-d0d8-4ef4-a96f-cfc6467d4124">
+        <AttributeRelationship>
           <AttributeID>NUM DIA SEMANA</AttributeID>
           <Name>NUM DIA SEMANA</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4742e004-cf76-45ba-b321-46d4d22b3522">
+        <AttributeRelationship>
           <AttributeID>ANIO</AttributeID>
           <Name>Año</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5e532509-cfdd-42ad-a5b3-8df3e599ba57">
+        <AttributeRelationship>
           <AttributeID>MES</AttributeID>
           <Name>Mes y Año</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b0a2ef28-5fc3-44de-8ab3-945ce20784bd">
+        <AttributeRelationship>
           <AttributeID>DIA</AttributeID>
           <Name>Día</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="76ce0760-b3e9-4626-810e-42ccf06b582f">
+        <AttributeRelationship>
           <AttributeID>DES SEMESTRE</AttributeID>
           <Name>Semestre</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f9507c2f-4ee3-486c-ac29-235ac287a7b8">
+        <AttributeRelationship>
           <AttributeID>DES TRIMESTRE</AttributeID>
           <Name>Trimestre</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4f8c0e90-2a46-4681-a575-6776c420c1b7">
+        <AttributeRelationship>
           <AttributeID>DES MES</AttributeID>
           <Name>Mes</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0a5ca9c8-c28a-40af-a26b-5bddf567999f">
+        <AttributeRelationship>
           <AttributeID>DES SEMANA</AttributeID>
           <Name>Semana</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="baedc645-5d52-420c-96e7-d9a99fe81cc0">
+        <AttributeRelationship>
           <AttributeID>DES DIA SEMANA</AttributeID>
           <Name>Día Semana</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="467bc83d-1261-419c-9976-44e44bafb915">
+        <AttributeRelationship>
           <AttributeID>PERIODO</AttributeID>
           <Name>Periódo</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="46fa3488-efcf-4bf5-a3c2-d48063cb175c">
+        <AttributeRelationship>
           <AttributeID>TSTAMP</AttributeID>
           <Name>TSTAMP</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dfe52dfe-b5e0-4b19-9d86-b918554080e6">
+        <AttributeRelationship>
           <AttributeID>NUM SEMANA</AttributeID>
           <Name>NUM SEMANA</Name>
         </AttributeRelationship>
@@ -152,82 +162,103 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="805e1a0a-2465-456d-862b-0a0ae717c608">
+    <Attribute>
       <ID>NUM MES</ID>
       <Name>NUM MES</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="12afe492-cc29-47ac-864d-3bc0b4de8918">
+        <KeyColumn>
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9840f72-f3d6-45c0-a2c6-df9abbb66944">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>NUM_MES</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>NUM_MES</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a46975e9-a6e2-4a87-98b4-89f4e6cb8a0c">
+    <Attribute>
       <ID>NUM DIA SEMANA</ID>
       <Name>NUM DIA SEMANA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="babb317b-5b70-4964-8dae-08a7ed1c95f1">
+        <KeyColumn>
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="63a624b6-2911-41a5-9eff-75056d4db521">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>NUM_DIA_SEMANA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>NUM_DIA_SEMANA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2ae2cd41-24bc-4f6d-a147-29067bf9623a">
+    <Attribute>
       <ID>ANIO</ID>
       <Name>01 - Año</Name>
       <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5fb5d4a2-3aa9-4a3a-bf38-e9e8115abe4f">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d55317ef-4c23-4f98-bb1a-559e28170fde">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>ANIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>ANIO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d7dd8b7a-22d6-4609-bf8a-7007d133f7be">
+    <Attribute>
       <ID>MES</ID>
       <Name>02 - Mes</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="225154fa-d17c-4d38-a2d1-0a06fd97678a">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a93f0d0-a267-422c-9480-81351aaf8813">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>PERIODO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="dbca13c6-e482-4f73-8ea7-031cbf2b071c">
+      <NameColumn>
         <DataType>WChar</DataType>
         <DataSize>7</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="357ddc8a-34f6-4da5-827d-d42ac2c8fea4">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_FECHA_FINALIZACION</TableID>
           <ColumnID>MES</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="a132ee79-b022-4f5e-b3a9-ac56af8b5d54">
+      <ValueColumn>
         <DataType>WChar</DataType>
         <DataSize>7</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c3338ce7-22fc-4c03-aa14-faa2e7f492e6">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_FECHA_FINALIZACION</TableID>
           <ColumnID>MES</ColumnID>
         </Source>
@@ -235,31 +266,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1365671a-24b6-4fff-8525-1426be8db4d2">
+    <Attribute>
       <ID>DIA</ID>
       <Name>03 - Día</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f616ac39-1a9f-4fd4-9222-c5d7b02ec2b6">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="37eb56b8-7612-4db8-8cba-b58486a15aaa">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>ID_FECHA_FINALIZACION</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="10ef93c8-de9c-4392-9ffc-6faa1ff04ff0">
+      <NameColumn>
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6e8c28e4-9a4c-4179-9d6f-161ccc0983a6">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_FECHA_FINALIZACION</TableID>
           <ColumnID>DIA</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="64ee1254-2b5c-49bd-a142-6e36eb79cb83">
+      <ValueColumn>
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="22935b27-aebc-4a72-9b1e-f3c7af685aac">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_FECHA_FINALIZACION</TableID>
           <ColumnID>DIA</ColumnID>
         </Source>
@@ -267,85 +298,109 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3e79e802-c1a5-47af-a77e-208c7c09f643">
+    <Attribute>
       <ID>DES SEMESTRE</ID>
       <Name>DES_SEMESTRE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4c94ac52-44c2-44eb-820e-371d45047df7">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="60c2d321-91b2-4c48-aaee-cc63477ee44c">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>DES_SEMESTRE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>DES_SEMESTRE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2b7aa762-470d-4091-8ceb-50009a51d1e1">
+    <Attribute>
       <ID>DES TRIMESTRE</ID>
       <Name>DES_TRIMESTRE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="13af8c30-ac5e-4561-9c4b-47276b15f2de">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9afdde80-f0ae-4d8f-95a9-1e16dbfc7c8e">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>DES_TRIMESTRE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>DES_TRIMESTRE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2090c5e1-8ce2-48e8-b67b-c7ffd28c15a1">
+    <Attribute>
       <ID>DES MES</ID>
       <Name>DES_MES</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d2a3b5e2-c76b-4417-b26a-6517b2f2201c">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="903a063d-c62d-4dd3-944a-10fa1942b746">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>DES_MES</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>DES_MES</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="96b94fb8-036a-40c8-8a7b-12d4a7880b86">
+    <Attribute>
       <ID>DES SEMANA</ID>
       <Name>DES_SEMANA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4c8707de-ba46-4e56-81aa-448ebdc24693">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9198a494-710d-4d12-a8ff-333f7486ecb2">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>NUM_SEMANA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6e6b72cc-0efb-43ad-b272-dca2ef2bbc02">
+      <NameColumn>
         <DataType>WChar</DataType>
         <DataSize>15</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d7589c0e-c5a5-4d9f-8ff4-71fac1909cce">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_FECHA_FINALIZACION</TableID>
           <ColumnID>DES_SEMANA</ColumnID>
         </Source>
       </NameColumn>
       <OrderBy>Key</OrderBy>
-      <ValueColumn dwd:design-time-name="01e8081c-4f4e-4988-9316-b64f61426dd7">
+      <ValueColumn>
         <DataType>WChar</DataType>
         <DataSize>15</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="14ff0ab4-5091-4e30-9f52-7a5f9b43eecd">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_FECHA_FINALIZACION</TableID>
           <ColumnID>DES_SEMANA</ColumnID>
         </Source>
@@ -354,127 +409,156 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8a5df057-79b0-4f74-808a-2520df2dff2a">
+    <Attribute>
       <ID>DES DIA SEMANA</ID>
       <Name>DES_DIA_SEMANA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b9b0ed2c-958a-4f82-be20-3548dd401543">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="307eea56-d344-499c-87b9-dc3c0fc1e8da">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>DES_DIA_SEMANA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>DES_DIA_SEMANA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="563564f6-0953-41d1-a950-25f982ca2dcc">
+    <Attribute>
       <ID>PERIODO</ID>
       <Name>PERIODO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="40c07a38-a883-4a77-9dba-9dab8369ee0d">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="157f0e96-a0e6-4a28-b15c-5390acca17ff">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>PERIODO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>PERIODO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b7cbba7f-adad-407e-9f50-690d46ac818b">
+    <Attribute>
       <ID>TSTAMP</ID>
       <Name>TSTAMP</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e3db54ed-bd9f-4781-8acb-71a9e8ef734c">
+        <KeyColumn>
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="aed060ff-ce43-4b96-afa4-664f1b7ac2dc">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>TSTAMP</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>TSTAMP</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6aa14aea-485a-414e-b852-fa2e58663ba8">
+    <Attribute>
       <ID>NUM SEMANA</ID>
       <Name>NUM SEMANA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3166cdb3-aeb2-456f-a4e5-15cfae16a6c0">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7ce847c-aef3-41a7-834a-0c4886953c3d">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FECHA_FINALIZACION</TableID>
             <ColumnID>NUM_SEMANA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FECHA_FINALIZACION</TableID>
+          <ColumnID>NUM_SEMANA</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="4afa3bab-8647-4e55-9f1d-b7682849f36a">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Fecha Finalización</Name>
       <Levels>
-        <Level dwd:design-time-name="f6f83d3e-4649-4735-a887-06748a1605d5">
+        <Level>
           <ID>Año</ID>
           <Name>Año</Name>
           <SourceAttributeID>ANIO</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="b6c8914b-09c8-4ce6-8be5-26f6c9d9d5b1">
+        <Level>
           <ID>Semestre</ID>
           <Name>Semestre</Name>
           <SourceAttributeID>DES SEMESTRE</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="a605474b-d453-49ae-8982-6baa461a40d7">
+        <Level>
           <ID>Trimestre</ID>
           <Name>Trimestre</Name>
           <SourceAttributeID>DES TRIMESTRE</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="cf9ac010-d13a-482b-a6b9-75aa6438c548">
+        <Level>
           <ID>Mes</ID>
           <Name>Mes</Name>
           <SourceAttributeID>MES</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="d44d6bde-2e6c-4068-84b5-cd043b3ceaf4">
+        <Level>
           <ID>Semana</ID>
           <Name>Semana</Name>
           <SourceAttributeID>DES SEMANA</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="ebb7f480-166e-4221-875c-8f6415337100">
+        <Level>
           <ID>Día</ID>
           <Name>Día</Name>
           <SourceAttributeID>DIA</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="486e9ac7-9e7b-4daf-a4f9-221d849a01f0">
+    <Hierarchy>
       <ID>Hierarchy 1</ID>
       <Name>Fecha Finalización - Mes</Name>
       <Levels>
-        <Level dwd:design-time-name="3930b4fa-13bc-42ae-80c1-0c29d554395e">
+        <Level>
           <ID>01 - Año</ID>
           <Name>Año</Name>
           <SourceAttributeID>ANIO</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="8d5baee8-f2fc-405c-b790-da838581d33f">
+        <Level>
           <ID>02 - Mes</ID>
           <Name>Mes</Name>
           <SourceAttributeID>MES</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="92d5345d-ccb2-4943-8d17-4d134ab10efa">
+        <Level>
           <ID>03 - Día</ID>
           <Name>Día</Name>
           <SourceAttributeID>DIA</SourceAttributeID>
@@ -482,5 +566,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

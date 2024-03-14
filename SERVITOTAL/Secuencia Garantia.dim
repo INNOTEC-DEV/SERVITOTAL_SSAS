@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="810308b5-8939-42ae-9f34-097d14313ea6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Secuencia Garantia</ID>
   <Name>Secuencia Garantia</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.866667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:36.983333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f0bc7d67-3326-40e3-95b8-cb160dd6416c">
+  <LastProcessed>2024-03-14T13:42:45.946667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="4739facd-bb66-4f37-af2c-30a63dc2f362">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="3a641605-3158-4380-a90b-62adcc7e39f7">
+    <Attribute>
       <ID>ID SECUENCIA GARANTIA</ID>
       <Name>ID SECUENCIA GARANTIA</Name>
       <Usage>Key</Usage>
       <EstimatedCount>94</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c78b29ab-6655-4563-b0b4-3358b623ad32">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4312cab2-2636-4f15-9575-c27670f67dd1">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_SECUENCIA_GARANTIA</TableID>
             <ColumnID>ID_SECUENCIA_GARANTIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_SECUENCIA_GARANTIA</TableID>
+          <ColumnID>ID_SECUENCIA_GARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="228fc01b-3cda-4fc9-9065-c6ace0ac7aa6">
+        <AttributeRelationship>
           <AttributeID>COD SECUENCIA GARANTIA</AttributeID>
           <Name>Código Secuencia Garantia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="fb2c14ce-15e3-4609-9fa9-b30a48ffd852">
+        <AttributeRelationship>
           <AttributeID>DES SECUENCIA GARANTIA</AttributeID>
           <Name>Descripción Secuencia Garantia</Name>
         </AttributeRelationship>
@@ -108,39 +118,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2e34535a-c681-48cc-be3c-c57c919b8031">
+    <Attribute>
       <ID>COD SECUENCIA GARANTIA</ID>
       <Name>COD_SECUENCIA_GARANTIA</Name>
       <EstimatedCount>94</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a6765692-daaa-41a5-a3f4-7d81b3994095">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ac88230-75e7-4e79-a8b5-bf42d7ce95b8">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_SECUENCIA_GARANTIA</TableID>
             <ColumnID>COD_SECUENCIA_GARANTIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>12</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_SECUENCIA_GARANTIA</TableID>
+          <ColumnID>COD_SECUENCIA_GARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5b09fada-f430-43ea-820f-7ed150947500">
+    <Attribute>
       <ID>DES SECUENCIA GARANTIA</ID>
       <Name>DES_SECUENCIA_GARANTIA</Name>
       <EstimatedCount>94</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a4f5f388-cd9a-4f21-a7c3-abe553616783">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="97d7faba-2563-4f7b-a7db-825be19ee39a">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_SECUENCIA_GARANTIA</TableID>
             <ColumnID>DES_SECUENCIA_GARANTIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_SECUENCIA_GARANTIA</TableID>
+          <ColumnID>DES_SECUENCIA_GARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -148,11 +174,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="79845198-081a-4e4c-8958-34a8196f9a29">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Secuencia Garantia</Name>
       <Levels>
-        <Level dwd:design-time-name="b99ef4e5-903c-4bec-a0d1-80f882a8bb08">
+        <Level>
           <ID>Secuencia_Garantia</ID>
           <Name>Secuencia_Garantia</Name>
           <SourceAttributeID>DES SECUENCIA GARANTIA</SourceAttributeID>
@@ -160,5 +186,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

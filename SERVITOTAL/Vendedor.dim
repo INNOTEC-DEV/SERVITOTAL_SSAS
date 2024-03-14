@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9276ff6b-3e0f-428d-85f6-e2b4d7a93a38" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Vendedor</ID>
   <Name>Vendedor</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:36.01Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.433333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,55 +66,65 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="82da60cf-5a95-4bc0-ae5e-8639032e7ad4">
+  <LastProcessed>2024-03-14T13:42:39.26Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="508e301a-dee2-4961-8edd-16a48807cb41">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="7239ba2f-a680-4684-ba2f-05a852d93f1a">
+    <Attribute>
       <ID>ID VENDEDOR</ID>
       <Name>ID VENDEDOR</Name>
       <Usage>Key</Usage>
       <EstimatedCount>4748</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d2193dbd-2e10-4d7e-b897-b0b063ad68d0">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d8d91c0-025f-4161-bb49-3dd19827dbde">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_VENDEDOR</TableID>
             <ColumnID>ID_VENDEDOR</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_VENDEDOR</TableID>
+          <ColumnID>ID_VENDEDOR</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="31ee8f7d-2ba1-4fc5-b647-d9d270ea1e0f">
+        <AttributeRelationship>
           <AttributeID>COD COMPANIA</AttributeID>
           <Name>Código Compañia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7a470530-1a64-4cf3-9cb8-efea4f96a68e">
+        <AttributeRelationship>
           <AttributeID>COD VENDEDOR</AttributeID>
           <Name>Código Vendedor</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0ccf1d9c-b3c7-4902-8dfe-765a6bc95384">
+        <AttributeRelationship>
           <AttributeID>DES VENDEDOR</AttributeID>
           <Name>Vendedor</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="40bf54b7-7669-4183-aa01-62a8b7ec94c0">
+        <AttributeRelationship>
           <AttributeID>DES CEDULA</AttributeID>
           <Name>Cédula</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7782855a-ea80-49db-bdb8-6d051c3ce8c6">
+        <AttributeRelationship>
           <AttributeID>DES PUESTO</AttributeID>
           <Name>Puesto</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6c35c794-881b-4e60-9639-9d4eabac992f">
+        <AttributeRelationship>
           <AttributeID>TSTAMP</AttributeID>
           <Name>TSTAMP</Name>
         </AttributeRelationship>
@@ -124,111 +134,157 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="390d37b6-cde3-41a5-950e-5005674b97c9">
+    <Attribute>
       <ID>COD COMPANIA</ID>
       <Name>COD_COMPANIA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3f80b037-4ff3-407f-8fac-5bb96b8ae1a8">
+        <KeyColumn>
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f17aa51-d01f-4932-88eb-e2a77d6a6926">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_VENDEDOR</TableID>
             <ColumnID>COD_COMPANIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_VENDEDOR</TableID>
+          <ColumnID>COD_COMPANIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9eae425c-6745-4b64-9faa-efd30be70aed">
+    <Attribute>
       <ID>COD VENDEDOR</ID>
       <Name>COD_VENDEDOR</Name>
       <EstimatedCount>4737</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cd952eb4-5428-4e43-93e9-6ce9efb37b7f">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="441f9acc-cad8-47f2-b6ba-39dd5c761155">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_VENDEDOR</TableID>
             <ColumnID>COD_VENDEDOR</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_VENDEDOR</TableID>
+          <ColumnID>COD_VENDEDOR</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="338340b1-49f5-4ce5-bc6c-9b032317a70d">
+    <Attribute>
       <ID>DES VENDEDOR</ID>
       <Name>DES_VENDEDOR</Name>
       <EstimatedCount>4678</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8529580f-cafc-4b48-b189-ed52016cc24d">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="dba86a24-b434-4812-821e-3e885c78f145">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_VENDEDOR</TableID>
             <ColumnID>DES_VENDEDOR</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_VENDEDOR</TableID>
+          <ColumnID>DES_VENDEDOR</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9fb1db17-ba8f-425d-8bbf-6098d05bf09d">
+    <Attribute>
       <ID>DES CEDULA</ID>
       <Name>DES_CEDULA</Name>
       <EstimatedCount>4636</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f8a89a1b-b213-429e-8b44-54c9bee97665">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="65dc8174-0822-4928-9f2b-480d6cc214cc">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_VENDEDOR</TableID>
             <ColumnID>DES_CEDULA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_VENDEDOR</TableID>
+          <ColumnID>DES_CEDULA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f2920941-02a6-4c92-b16b-54a320da293c">
+    <Attribute>
       <ID>DES PUESTO</ID>
       <Name>DES_PUESTO</Name>
       <EstimatedCount>96</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6b8eeda2-4f26-42aa-837a-f61f333cf87f">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="87fef5b4-161b-4f86-a73f-2af5232c4dc9">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_VENDEDOR</TableID>
             <ColumnID>DES_PUESTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_VENDEDOR</TableID>
+          <ColumnID>DES_PUESTO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="afbc8b96-4400-42c1-94a5-bb60f1520980">
+    <Attribute>
       <ID>TSTAMP</ID>
       <Name>TSTAMP</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fad5c229-e42f-403e-ab5e-df079101bf17">
+        <KeyColumn>
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="73dcaa44-607c-4c15-93d4-fa00c272517d">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_VENDEDOR</TableID>
             <ColumnID>TSTAMP</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_VENDEDOR</TableID>
+          <ColumnID>TSTAMP</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -236,44 +292,44 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="ccb8a00f-973f-40ec-a263-814bf4926cd0">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Vendedor</Name>
       <Levels>
-        <Level dwd:design-time-name="8e3a6710-7e9a-4ed9-8f47-f9512fc2d8fb">
+        <Level>
           <ID>Vendedor</ID>
           <Name>Vendedor</Name>
           <SourceAttributeID>DES VENDEDOR</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="298ad17d-13ca-4eff-a142-758c4020b9d2">
+    <Hierarchy>
       <ID>Hierarchy 1</ID>
       <Name>Código Vendedor</Name>
       <Levels>
-        <Level dwd:design-time-name="38ac1976-a168-4354-8f30-13c89a5cee4a">
+        <Level>
           <ID>COD_VENDEDOR</ID>
           <Name>Código Vendedor</Name>
           <SourceAttributeID>COD VENDEDOR</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="71df632d-a976-46f8-9c36-8e38dd6d954a">
+    <Hierarchy>
       <ID>Hierarchy 2</ID>
       <Name>Cédula Vendedor</Name>
       <Levels>
-        <Level dwd:design-time-name="b4bfcc59-af94-440e-ad15-e52bea1023f8">
+        <Level>
           <ID>DES_CEDULA</ID>
           <Name>Cédula Vendedor</Name>
           <SourceAttributeID>DES CEDULA</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="e591b64d-49d9-4eb1-a601-f73c092a0b66">
+    <Hierarchy>
       <ID>Hierarchy 3</ID>
       <Name>Puesto Vendedor</Name>
       <Levels>
-        <Level dwd:design-time-name="92e779a4-3628-49ec-a992-d2b07d3113ea">
+        <Level>
           <ID>DES_PUESTO</ID>
           <Name>Puesto Vendedor</Name>
           <SourceAttributeID>DES PUESTO</SourceAttributeID>
@@ -281,5 +337,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="18235c35-9fde-47ab-ad21-193fa7ca81f1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Estado Taller</ID>
   <Name>Estado Taller</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:36.063333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.583333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="00b5db93-4d95-4068-9043-3b4401da06ed">
+  <LastProcessed>2024-03-14T13:42:43.473333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="601f272d-cbdf-407b-a115-6fcb9eb90fea">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="511a6f3b-4ff3-4e50-9a6e-2f3f4da91f86">
+    <Attribute>
       <ID>ID ESTADO TALLER</ID>
       <Name>ID ESTADO TALLER</Name>
       <Usage>Key</Usage>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1be89ad0-8c69-48aa-9ebf-59606f9f1360">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f0a7dbc-b54a-43ca-a64a-e237ab56ca4d">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_ESTADO_TALLER</TableID>
             <ColumnID>ID_ESTADO_TALLER</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_ESTADO_TALLER</TableID>
+          <ColumnID>ID_ESTADO_TALLER</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="26000f18-b0df-4833-ae2e-4d0a8c400280">
+        <AttributeRelationship>
           <AttributeID>COD ESTADO TALLER</AttributeID>
           <Name>Código_Estado_Taller</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c42a9bbe-971b-409b-8b6b-a41f37726a72">
+        <AttributeRelationship>
           <AttributeID>DES ESTADO TALLER</AttributeID>
           <Name>Estado_Taller</Name>
         </AttributeRelationship>
@@ -108,38 +118,54 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c0e17a28-8d6e-4d57-b2c4-9e5f14ce5ad4">
+    <Attribute>
       <ID>COD ESTADO TALLER</ID>
       <Name>Código Estado Taller</Name>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4d0cad13-ac2b-47f3-8506-c68210b5e7d8">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>3</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e2c7d51-790e-400d-a7e8-a0e5954e0361">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_ESTADO_TALLER</TableID>
             <ColumnID>COD_ESTADO_TALLER</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_ESTADO_TALLER</TableID>
+          <ColumnID>COD_ESTADO_TALLER</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="73b7e8a9-0ad9-461d-b2a2-10e3bc09e531">
+    <Attribute>
       <ID>DES ESTADO TALLER</ID>
       <Name>DES_ESTADO_TALLER</Name>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0ffd74a3-3a91-426b-9415-4dc8f44d9728">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="807e139c-a51e-4c13-b310-05946f749480">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_ESTADO_TALLER</TableID>
             <ColumnID>DES_ESTADO_TALLER</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_ESTADO_TALLER</TableID>
+          <ColumnID>DES_ESTADO_TALLER</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -147,11 +173,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="c2b88198-0a69-4a8c-acac-e90e747c8bd3">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Estado Taller</Name>
       <Levels>
-        <Level dwd:design-time-name="8fe8f32d-6def-457c-ae67-a0da5a556aa6">
+        <Level>
           <ID>DES_ESTADO_TALLER</ID>
           <Name>Estado Taller</Name>
           <SourceAttributeID>DES ESTADO TALLER</SourceAttributeID>
@@ -159,5 +185,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

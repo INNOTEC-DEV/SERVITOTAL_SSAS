@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="917455ee-7e5f-4278-9c6e-a776db09e83e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Indicador Obsoleto</ID>
   <Name>Indicador Obsoleto</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-04-17T22:38:59.873333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:36.76Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,40 +66,51 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e0b8bcf8-dd2c-4626-9dab-a9387080b7ce">
+  <LastProcessed>2024-03-14T13:42:46.846667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="a26992dd-c519-488c-a893-878c710fd924">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="8cff153f-36d1-43d4-8858-aaa9afe1c155">
+    <Attribute>
       <ID>ID IND OBSOLETO</ID>
       <Name>ID IND OBSOLETO</Name>
       <Usage>Key</Usage>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0388b85c-547b-4f82-bbd1-db99b47e1651">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1f01614-75a0-4dc5-a18a-08fab95a54f9">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_OBSOLETO</TableID>
             <ColumnID>ID_IND_OBSOLETO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_OBSOLETO</TableID>
+          <ColumnID>ID_IND_OBSOLETO</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="af8d95b8-fead-49bf-842e-4eee250e7f73">
+        <AttributeRelationship>
           <AttributeID>COD IND OBSOLETO</AttributeID>
           <Name>Ind Obsoleto</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="85e153d4-6fce-4b07-8a14-a05ad2d9de41">
+        <AttributeRelationship>
           <AttributeID>DES IND OBSOLETO</AttributeID>
           <Name>DES IND OBSOLETO</Name>
         </AttributeRelationship>
@@ -109,39 +120,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7bfcff57-ee04-4afa-80d0-f2340f87e561">
+    <Attribute>
       <ID>COD IND OBSOLETO</ID>
       <Name>COD IND OBSOLETO</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4bda831d-752d-46e4-a93f-38dbc96901e3">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="92c64522-638e-4fcb-b1eb-b90da1dc6f07">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_OBSOLETO</TableID>
             <ColumnID>COD_IND_OBSOLETO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>12</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_OBSOLETO</TableID>
+          <ColumnID>COD_IND_OBSOLETO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5f93742f-c750-4c45-913c-1ac16369bc4e">
+    <Attribute>
       <ID>DES IND OBSOLETO</ID>
       <Name>DES IND OBSOLETO</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2e7f84d8-cf6e-457a-b6a4-fba4d60ee955">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4540c75-acf4-4723-aaeb-b9348ed262bb">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_OBSOLETO</TableID>
             <ColumnID>DES_IND_OBSOLETO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_OBSOLETO</TableID>
+          <ColumnID>DES_IND_OBSOLETO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -149,11 +176,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="efe8ce8d-1eb3-4cd6-a0d1-804a21ad265c">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Indicador Obsoleto</Name>
       <Levels>
-        <Level dwd:design-time-name="72fcac5b-ee3c-41fe-a2ea-e1156f8bde5d">
+        <Level>
           <ID>DES IND OBSOLETO</ID>
           <Name>Indicador Obsoleto</Name>
           <SourceAttributeID>DES IND OBSOLETO</SourceAttributeID>
@@ -161,5 +188,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

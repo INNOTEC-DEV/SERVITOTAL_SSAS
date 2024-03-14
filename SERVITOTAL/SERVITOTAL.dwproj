@@ -32,6 +32,10 @@
       <FullPath>Antiguedad Inventarios.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Antiguedad sin Fallo.dim</Name>
+      <FullPath>Antiguedad sin Fallo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Articulo.dim</Name>
       <FullPath>Articulo.dim</FullPath>
     </ProjectItem>
@@ -66,6 +70,10 @@
     <ProjectItem>
       <Name>Cuenta Contable.dim</Name>
       <FullPath>Cuenta Contable.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Días en Trámite.dim</Name>
+      <FullPath>Días en Trámite.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Eficiencia 10 Dias.dim</Name>
@@ -108,8 +116,8 @@
       <FullPath>Factor Inservible.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Factura.dim</Name>
-      <FullPath>Factura.dim</FullPath>
+      <Name>Facturas.dim</Name>
+      <FullPath>Facturas.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Falla.dim</Name>
@@ -128,12 +136,12 @@
       <FullPath>Fecha Compra.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Fecha Creación Boleta.dim</Name>
-      <FullPath>Fecha Creación Boleta.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Fecha Creacion Documento.dim</Name>
       <FullPath>Fecha Creacion Documento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Creación Boleta.dim</Name>
+      <FullPath>Fecha Creación Boleta.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Fecha Cuenta.dim</Name>
@@ -224,28 +232,32 @@
       <FullPath>Indicador Reparacion Aplicada.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Número Boleta.dim</Name>
-      <FullPath>Número Boleta.dim</FullPath>
+      <Name>Indicador Stock.dim</Name>
+      <FullPath>Indicador Stock.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Numero Liquidacion KM.dim</Name>
       <FullPath>Numero Liquidacion KM.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Número Liquidación MO.dim</Name>
-      <FullPath>Número Liquidación MO.dim</FullPath>
+      <Name>Numero Liquidacion RE.dim</Name>
+      <FullPath>Numero Liquidacion RE.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Número Liquidación RE.dim</Name>
-      <FullPath>Número Liquidación RE.dim</FullPath>
+      <Name>Número Boleta.dim</Name>
+      <FullPath>Número Boleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Liquidación MO.dim</Name>
+      <FullPath>Número Liquidación MO.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Número Transacción Boleta.dim</Name>
       <FullPath>Número Transacción Boleta.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Proveedor.dim</Name>
-      <FullPath>Proveedor.dim</FullPath>
+      <Name>Proveedores.dim</Name>
+      <FullPath>Proveedores.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Repuesto.dim</Name>
@@ -339,18 +351,6 @@
       <Name>Vendedor.dim</Name>
       <FullPath>Vendedor.dim</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Días en Trámite.dim</Name>
-      <FullPath>Días en Trámite.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Antiguedad sin Fallo.dim</Name>
-      <FullPath>Antiguedad sin Fallo.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Indicador Stock.dim</Name>
-      <FullPath>Indicador Stock.dim</FullPath>
-    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -364,6 +364,16 @@
       <FullPath>vDWH.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Gerencia.role</Name>
+      <FullPath>Gerencia.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal.role</Name>
+      <FullPath>Servitotal.role</FullPath>
+    </ProjectItem>
+  </Roles>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
@@ -382,6 +392,7 @@
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
+        <DeploymentServerEdition>EnterpriseCore</DeploymentServerEdition>
       </Options>
     </Configuration>
   </Configurations>

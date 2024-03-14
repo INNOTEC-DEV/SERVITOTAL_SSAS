@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2c8eff39-c9b8-4f09-8f44-4b41bd48612a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Tienda</ID>
   <Name>Tienda</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:36.003333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.083333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,115 +66,125 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="49a82bc0-3ef7-47c9-b1af-d288865e8397">
+  <LastProcessed>2024-03-14T13:43:08.67Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="5ee97fc3-59f0-4c89-849e-7726a4c3022b">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="52cfda8a-26e7-4dfc-a5d6-634341a734c2">
+    <Attribute>
       <ID>ID TIENDA</ID>
       <Name>ID TIENDA</Name>
       <Usage>Key</Usage>
       <EstimatedCount>409</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2f3a1966-e2da-44d3-8b70-5df8d8352e1b">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd9b178e-5104-4982-bc59-d89053cb24b3">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>ID_TIENDA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>ID_TIENDA</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="6482d816-7672-4e4d-ae7b-caf6a19c0016">
+        <AttributeRelationship>
           <AttributeID>COD COMPANIA</AttributeID>
           <Name>Código Compañia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2b8de9f9-ba0f-4412-8629-d2e21b4dccc6">
+        <AttributeRelationship>
           <AttributeID>COD TIENDA</AttributeID>
           <Name>Código Tienda</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b9a39cf6-90af-4bf4-a122-638bdb30d3a9">
+        <AttributeRelationship>
           <AttributeID>COD CADENA</AttributeID>
           <Name>Código Cadena</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dea29713-520d-4c47-8c52-9b8f06b1e774">
+        <AttributeRelationship>
           <AttributeID>COD CENTRO COSTO</AttributeID>
           <Name>Código Centro Costo</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="45d49304-8b3b-4439-bb7d-a56d0f951f6c">
+        <AttributeRelationship>
           <AttributeID>COD JEFE ZONA</AttributeID>
           <Name>Código Jefe Zona</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="31bd454f-6176-4c1a-a983-82480d80ca2e">
+        <AttributeRelationship>
           <AttributeID>DES TIENDA</AttributeID>
           <Name>Descripción Tienda</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="84f19d80-b4d6-477a-9d3a-42fa52cd6800">
+        <AttributeRelationship>
           <AttributeID>DES CADENA</AttributeID>
           <Name>Descripción Cadena</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="108d7934-2d9d-4ad3-b6eb-43233b59b8b7">
+        <AttributeRelationship>
           <AttributeID>DES CENTRO COSTO</AttributeID>
           <Name>Descripción Centro Costo</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="777179e8-74eb-4df5-ab16-07df3c34e021">
+        <AttributeRelationship>
           <AttributeID>DES JEFE ZONA</AttributeID>
           <Name>Descripción Jefe Zona</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b94bc602-440e-4696-bcaf-d4040448bbd3">
+        <AttributeRelationship>
           <AttributeID>DES ZONA</AttributeID>
           <Name>Descripción Zona</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2bf9ac70-5b2a-4d6f-8932-5280b676c420">
+        <AttributeRelationship>
           <AttributeID>DES LATITUD</AttributeID>
           <Name>Descripción Latitud</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4a5a098a-1178-4e3e-9709-64072b1368fa">
+        <AttributeRelationship>
           <AttributeID>DES LONGITUD</AttributeID>
           <Name>Descripción Longitud</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="16858bcc-f470-4bbf-b085-a8cb37d070ad">
+        <AttributeRelationship>
           <AttributeID>COD REGION SOCIOECONOMICA</AttributeID>
           <Name>Código Región Socioeconomica</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ac3545f0-0a9c-437d-836e-5fd595f3c51f">
+        <AttributeRelationship>
           <AttributeID>DES REGION SOCIOECONOMICA</AttributeID>
           <Name>Descripción Región Socioeconomica</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b3b7f061-624e-4bb0-b023-4086778ab6af">
+        <AttributeRelationship>
           <AttributeID>TSTAMP</AttributeID>
           <Name>TSTAMP</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1bfe1480-3211-4eae-86ba-f642822bb9dd">
+        <AttributeRelationship>
           <AttributeID>DES IND CERRADA</AttributeID>
           <Name>Descripción Ind Cerrada</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dcd61343-4a06-44aa-a730-6587c0dfae99">
+        <AttributeRelationship>
           <AttributeID>DES IND CENTRALIZADA</AttributeID>
           <Name>Descripción Ind Centralizada</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8d86e2f7-ef51-44e1-b214-6fe06d1de8c0">
+        <AttributeRelationship>
           <AttributeID>COD PROVINCIA</AttributeID>
           <Name>Código Provincia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="096f6587-c213-4995-b826-5833f8e9aeda">
+        <AttributeRelationship>
           <AttributeID>DES PROVINCIA</AttributeID>
           <Name>Descripción Provincia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dce417d8-75a3-4567-b806-a152b1097d56">
+        <AttributeRelationship>
           <AttributeID>COD TIPO COMUNIDAD</AttributeID>
           <Name>Código Tipo Comunidad</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e40332eb-3876-4db3-a051-b9ca40c05894">
+        <AttributeRelationship>
           <AttributeID>DES TIPO COMUNIDAD</AttributeID>
           <Name>Descripción Tipo Comunidad</Name>
         </AttributeRelationship>
@@ -184,380 +194,544 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="65da4f2f-af8e-4ed0-a7cb-13a92f3d999e">
+    <Attribute>
       <ID>COD COMPANIA</ID>
       <Name>COD_COMPANIA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="01948f93-dbc3-4616-b081-54e8c85cd5ca">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>2</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3268296c-9f8e-4f59-97dc-aba2cfda6e1c">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_COMPANIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_COMPANIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="91ad6617-8ac5-4a77-894e-d76e2ed5a55b">
+    <Attribute>
       <ID>COD TIENDA</ID>
       <Name>Código Tienda</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1dba4211-a38a-4451-9d09-69d52a8f1d25">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>3</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ddc4958-1884-42f5-b8f8-b017082806bc">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_TIENDA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_TIENDA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="23e0ad04-5715-4d03-8d51-a6f3772958e4">
+    <Attribute>
       <ID>COD CADENA</ID>
       <Name>COD_CADENA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="42714484-ff32-46f5-8e6d-7e91f2438f0f">
+        <KeyColumn>
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1236076f-a347-4252-a674-d27b2626eabc">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_CADENA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_CADENA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c8305efe-585a-4162-a36a-54db3ff42b76">
+    <Attribute>
       <ID>COD CENTRO COSTO</ID>
       <Name>COD_CENTRO_COSTO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="191a0407-4780-417f-b665-11642805ea51">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e6dbfcb-639b-4cd2-a281-108524abe040">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_CENTRO_COSTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_CENTRO_COSTO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="028de04f-2760-4c85-869d-e8d99664cd8c">
+    <Attribute>
       <ID>COD JEFE ZONA</ID>
       <Name>COD_JEFE_ZONA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="82c47925-f302-4a9b-8e63-d3fa1459cc1a">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>6</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="81cd8606-df2e-4826-8140-46488fb8c022">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_JEFE_ZONA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>6</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_JEFE_ZONA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0a3e0d31-f971-48ad-856e-5a1092dee122">
+    <Attribute>
       <ID>DES TIENDA</ID>
       <Name>DES_TIENDA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e89c538f-573f-4f10-9f03-ff83f73f2664">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>40</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="30b2f907-49f6-433f-87b0-acf26a174b1d">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_TIENDA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>40</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_TIENDA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="caa5e01c-c701-4a03-b082-833e6b9d9bba">
+    <Attribute>
       <ID>DES CADENA</ID>
       <Name>DES_CADENA</Name>
       <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="92f16615-b186-424c-a729-c8d5490309b9">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4cba2d8-1bb5-4ad5-b273-75c6f20be909">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_CADENA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>12</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_CADENA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b1104474-6322-4161-ac38-8ca1da6ccad8">
+    <Attribute>
       <ID>DES CENTRO COSTO</ID>
       <Name>DES_CENTRO_COSTO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5414bf31-0046-411b-833e-3e7a2b816670">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>40</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6996f6fe-531c-4294-94e9-ddd53857ec34">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_CENTRO_COSTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>40</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_CENTRO_COSTO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bfe72778-2ea6-4731-b68d-bc460a3199c3">
+    <Attribute>
       <ID>DES JEFE ZONA</ID>
       <Name>DES_JEFE_ZONA</Name>
       <EstimatedCount>11</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="83db6643-d5ca-470c-89b1-b08db91818ef">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f14e69f-9a5f-4cbe-8f99-565b57359850">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_JEFE_ZONA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_JEFE_ZONA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fd302070-00e6-4d28-b412-64a04024d57c">
+    <Attribute>
       <ID>DES ZONA</ID>
       <Name>DES_ZONA</Name>
       <EstimatedCount>8</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5996712a-3ea6-4b07-b9a6-1530ee953c62">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="58b0c892-feba-4a10-899b-8e362f7c2abf">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_ZONA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_ZONA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="35f388d3-9dd5-4ec0-ada0-8528298dd71d">
+    <Attribute>
       <ID>DES LATITUD</ID>
       <Name>DES_LATITUD</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ecb6ae5f-cc90-42d8-a7b8-1f9724dff52c">
+        <KeyColumn>
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="705786ea-bad3-49d6-bf3a-8f1ddeb8344c">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_LATITUD</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_LATITUD</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1649a5d4-3b14-4be3-930a-9bb8972ad78d">
+    <Attribute>
       <ID>DES LONGITUD</ID>
       <Name>DES_LONGITUD</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b8e0b412-428c-4487-bbdd-235c11b14415">
+        <KeyColumn>
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="93dd5c05-798a-40dc-b066-57fc53e6aeb6">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_LONGITUD</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_LONGITUD</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bd19d87a-37a6-432c-88a9-5180b40d9d42">
+    <Attribute>
       <ID>COD REGION SOCIOECONOMICA</ID>
       <Name>COD_REGION_SOCIOECONOMICA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c7c5c948-b4e6-404c-98c1-41aea08caf58">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>6</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6672a4f-5478-447b-84c6-7aa61dceff9e">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_REGION_SOCIOECONOMICA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>6</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_REGION_SOCIOECONOMICA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="697ae339-491e-4a5f-a531-ad39c7f19fca">
+    <Attribute>
       <ID>DES REGION SOCIOECONOMICA</ID>
       <Name>DES_REGION_SOCIOECONOMICA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c8b7ed04-8867-478f-a5c0-bcfd3a32297a">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c0d2cb5-392c-43ca-ad26-b13be1f4b31b">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_REGION_SOCIOECONOMICA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_REGION_SOCIOECONOMICA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f3c1f139-73ae-4700-b6ac-b0227513976b">
+    <Attribute>
       <ID>TSTAMP</ID>
       <Name>TSTAMP</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1cddc933-c1a8-4b11-a5c2-2ff74508ec45">
+        <KeyColumn>
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a03b3af-9fb6-43da-9325-ad6d89ac9aa6">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>TSTAMP</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>TSTAMP</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9b27c608-67e5-47f8-a63c-e4f04ecebdbe">
+    <Attribute>
       <ID>DES IND CERRADA</ID>
       <Name>DES_IND_CERRADA</Name>
       <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5ff40905-76d3-4e7d-8b74-6e46788aade7">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce01f5d9-0dec-4531-8248-28d374e637f2">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_IND_CERRADA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_IND_CERRADA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="52a126ba-275a-4fe6-b075-cc10cf855271">
+    <Attribute>
       <ID>DES IND CENTRALIZADA</ID>
       <Name>DES_IND_CENTRALIZADA</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2c2f179b-bf5c-425c-a9af-36a29bdeff6d">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ddf8585-a34c-4725-81dd-ca3d1babfcd3">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_IND_CENTRALIZADA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_IND_CENTRALIZADA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3667896c-e199-40d1-a3f4-4bcc34c06d03">
+    <Attribute>
       <ID>COD PROVINCIA</ID>
       <Name>COD_PROVINCIA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a8a3e87c-a946-41b9-9ccd-532acf55a8e3">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>6</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="27be5b6b-0c1d-4d56-b9fc-168e6dda1a1f">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_PROVINCIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>6</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_PROVINCIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4ae20e90-cea9-47a7-b3d0-4b0a54440b4e">
+    <Attribute>
       <ID>DES PROVINCIA</ID>
       <Name>DES_PROVINCIA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="47f1bc7f-a704-4c3b-ac54-d9ce82ef448e">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a40dd264-fc68-4d52-befd-443da25c8af0">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_PROVINCIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_PROVINCIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8815a1cf-8a26-4901-82ce-3ebf75e9203e">
+    <Attribute>
       <ID>COD TIPO COMUNIDAD</ID>
       <Name>COD_TIPO_COMUNIDAD</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2fbeac06-1a36-4e97-8b98-5217796b07b1">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="de49a4e2-2d53-4a4b-b27c-b7d4397c2281">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>COD_TIPO_COMUNIDAD</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>12</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>COD_TIPO_COMUNIDAD</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4a84fbee-838b-480b-a93a-a0676f11b6ef">
+    <Attribute>
       <ID>DES TIPO COMUNIDAD</ID>
       <Name>DES_TIPO_COMUNIDAD</Name>
       <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="143fbd79-766e-4a9a-a5ee-8144e2ea10f2">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="312b6f22-bba1-4f47-9dbb-1f1430e5e6e2">
+          <Source xsi:type="ColumnBinding">
             <TableID>COM_TD_TIENDA</TableID>
             <ColumnID>DES_TIPO_COMUNIDAD</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>12</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_TIPO_COMUNIDAD</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -565,53 +739,53 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="56f8c68e-8604-4aac-9306-1c66eb7b4397">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Tienda</Name>
       <Levels>
-        <Level dwd:design-time-name="e7d5afd2-14f1-40c0-8683-89117bd75ea1">
+        <Level>
           <ID>DES_CADENA</ID>
           <Name>Cadena</Name>
           <SourceAttributeID>DES CADENA</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="70917e5d-34f9-4ddf-9f9c-a0437ba426ca">
+        <Level>
           <ID>DES_PROVINCIA</ID>
           <Name>Provincia</Name>
           <SourceAttributeID>DES PROVINCIA</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="7361d245-2577-452b-97c5-63a08d2d98a4">
+        <Level>
           <ID>DES_TIENDA</ID>
           <Name>Tienda</Name>
           <SourceAttributeID>DES TIENDA</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="b898ba30-f759-48bc-8d11-b9b330637de9">
+        <Level>
           <ID>DES_CENTRO_COSTO</ID>
           <Name>Centro de  Costo</Name>
           <SourceAttributeID>DES CENTRO COSTO</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="2ade95a0-8a4f-49e5-9de4-0b5a852d99e0">
+    <Hierarchy>
       <ID>Hierarchy 1</ID>
       <Name>Jefe de Zona</Name>
       <Levels>
-        <Level dwd:design-time-name="dc4d4889-3918-4c37-be37-a9990e54dd07">
+        <Level>
           <ID>DES_JEFE_ZONA</ID>
           <Name>Jefe de Zona</Name>
           <SourceAttributeID>DES JEFE ZONA</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="a922c204-5c4a-4203-ba0e-f338f6b795c8">
+        <Level>
           <ID>DES_ZONA</ID>
           <Name>Zona</Name>
           <SourceAttributeID>DES ZONA</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="2d07247e-52b7-4d33-9cec-249e97a79771">
+    <Hierarchy>
       <ID>Hierarchy 2</ID>
       <Name>Tipo de Comunidad</Name>
       <Levels>
-        <Level dwd:design-time-name="1aa4a573-1c3e-4eb2-b860-36cff880bb6b">
+        <Level>
           <ID>DES_TIPO_COMUNIDAD</ID>
           <Name>Tipo de Comunidad</Name>
           <SourceAttributeID>DES TIPO COMUNIDAD</SourceAttributeID>
@@ -619,5 +793,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

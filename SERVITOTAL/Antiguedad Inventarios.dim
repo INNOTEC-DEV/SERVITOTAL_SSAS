@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7d904f95-df08-46c6-a9f2-5935c3752877" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Antiguedad Inventarios</ID>
   <Name>Antiguedad Inventarios</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-05-23T14:48:49.7Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.176667Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,50 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d9089db4-ec44-4354-97da-de5e7d2ff848">
+  <LastProcessed>2024-03-14T13:42:40.876667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="b2603436-d3ac-4eb1-a9e3-6b05425036f3">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="13bd5e44-ab91-47e4-807d-b99b34ca0c50">
+    <Attribute>
       <ID>ID ANTIGUEDAD INV</ID>
       <Name>ID ANTIGUEDAD INV</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5ea549fd-d197-4f90-bbca-93054f6d3659">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="31dabdec-7f64-4f4c-9559-637c1b8fda11">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_ANTIGUEDAD_INV</TableID>
             <ColumnID>ID_ANTIGUEDAD_INV</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_ANTIGUEDAD_INV</TableID>
+          <ColumnID>ID_ANTIGUEDAD_INV</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="91f7e464-fd64-457e-83fe-851f3e8100f6">
+        <AttributeRelationship>
           <AttributeID>COD ANTIGUEDAD INV</AttributeID>
           <Name>COD ANTIGUEDAD INV</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0baf2918-b848-4e96-b65d-44c92e2509cb">
+        <AttributeRelationship>
           <AttributeID>DES ANTIGUEDAD INV</AttributeID>
           <Name>DES ANTIGUEDAD INV</Name>
         </AttributeRelationship>
@@ -108,36 +119,51 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5d5c151c-416c-4866-8d26-3ad45e4af997">
+    <Attribute>
       <ID>COD ANTIGUEDAD INV</ID>
       <Name>COD ANTIGUEDAD INV</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="741bfdff-1be6-4ed8-8472-50531f51bc2f">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e037875-bf00-4e9c-a71f-b90a8872c91f">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_ANTIGUEDAD_INV</TableID>
             <ColumnID>COD_ANTIGUEDAD_INV</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_ANTIGUEDAD_INV</TableID>
+          <ColumnID>COD_ANTIGUEDAD_INV</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5ddeb5a1-5cf9-4fb3-a010-44ba84c07e90">
+    <Attribute>
       <ID>DES ANTIGUEDAD INV</ID>
       <Name>DES ANTIGUEDAD INV</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f1c76d5e-ad8b-4d47-822a-6404b9b44ec5">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0eb50a3d-5faf-451c-9763-1a4380aeb77c">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_ANTIGUEDAD_INV</TableID>
             <ColumnID>DES_ANTIGUEDAD_INV</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_ANTIGUEDAD_INV</TableID>
+          <ColumnID>DES_ANTIGUEDAD_INV</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -145,11 +171,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="4f98f190-a241-4485-8f7a-630b0193bf05">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Antiguedad Inventarios</Name>
       <Levels>
-        <Level dwd:design-time-name="084b5d62-e92b-4034-ab14-9d701315989f">
+        <Level>
           <ID>DES ANTIGUEDAD INV</ID>
           <Name>Antiguedad Inventarios</Name>
           <SourceAttributeID>DES ANTIGUEDAD INV</SourceAttributeID>
@@ -157,5 +183,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

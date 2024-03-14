@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="99ea3c7c-31a5-4d24-a6bc-178a24193554" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Tipo Movimiento</ID>
   <Name>Tipo Movimiento</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.89Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.223333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="db7472c4-feec-479e-a7f6-46d581162205">
+  <LastProcessed>2024-03-14T13:42:42.73Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="13459ea2-cac7-451d-a748-269750643ed1">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="7d4127e8-57ab-4885-8cc5-28629eff74e4">
+    <Attribute>
       <ID>ID TIPO MOVIMIENTO</ID>
       <Name>ID TIPO MOVIMIENTO</Name>
       <Usage>Key</Usage>
       <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="044fcb6c-ab1f-430c-8063-e4896b99d514">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4dd1a4aa-07ff-49b6-9c54-864ca8d857d7">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_TIPO_MOVIMIENTO</TableID>
             <ColumnID>ID_TIPO_MOVIMIENTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_TIPO_MOVIMIENTO</TableID>
+          <ColumnID>ID_TIPO_MOVIMIENTO</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="22cd8f9e-4fc0-4805-8a1a-bae24f0db7e3">
+        <AttributeRelationship>
           <AttributeID>COD TIPO MOVIMIENTO</AttributeID>
           <Name>Código Tipo Movimiento</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4bc593f4-133f-4dad-87e7-d6ebf5a8e0cd">
+        <AttributeRelationship>
           <AttributeID>DES TIPO MOVIMIENTO</AttributeID>
           <Name>Descripción  Tipo Movimiento</Name>
         </AttributeRelationship>
@@ -108,39 +118,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2d55389f-99c1-4efc-a1b8-d97536ba452b">
+    <Attribute>
       <ID>COD TIPO MOVIMIENTO</ID>
       <Name>COD_TIPO_MOVIMIENTO</Name>
       <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c9ece8cd-d4e1-42ce-88a6-30cc12a22977">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>3</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b46c7c1e-8396-40c2-86cd-77b7ee542bf5">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_TIPO_MOVIMIENTO</TableID>
             <ColumnID>COD_TIPO_MOVIMIENTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_TIPO_MOVIMIENTO</TableID>
+          <ColumnID>COD_TIPO_MOVIMIENTO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="31fc49bd-66ac-4d45-8f49-73a8920839c0">
+    <Attribute>
       <ID>DES TIPO MOVIMIENTO</ID>
       <Name>DES_TIPO_MOVIMIENTO</Name>
       <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="60664c80-4d99-42cb-9650-477d6d671398">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0cd264bc-29e8-45d3-b8c2-fffcee90d1d3">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_TIPO_MOVIMIENTO</TableID>
             <ColumnID>DES_TIPO_MOVIMIENTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_TIPO_MOVIMIENTO</TableID>
+          <ColumnID>DES_TIPO_MOVIMIENTO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -148,11 +174,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="05f83c35-7dc5-4954-baec-fe9361647dc4">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Tipo Movimiento</Name>
       <Levels>
-        <Level dwd:design-time-name="033bff88-2c1e-48b6-81b7-4d3762c520d3">
+        <Level>
           <ID>Tipo Movimiento</ID>
           <Name>Tipo Movimiento</Name>
           <SourceAttributeID>DES TIPO MOVIMIENTO</SourceAttributeID>
@@ -160,5 +186,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

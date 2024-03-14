@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7b95c2c7-becc-402f-b794-4b29f4b7991e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Indicador Stock</ID>
   <Name>Indicador Stock</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-06-15T14:58:45.88Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.476667Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,50 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d9cb5f85-1de7-40a2-9e9f-7b96f937db75">
+  <LastProcessed>2024-03-14T13:43:09.53Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="4cbb87dd-4c40-4492-8c36-51541e2ed189">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="3c72c735-c824-497d-9435-2617bd79f36f">
+    <Attribute>
       <ID>ID IND STOCK</ID>
       <Name>ID IND STOCK</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f031e6ac-3952-482c-a0aa-e53b983a098d">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="87a0e95f-e34b-4694-9ced-415c98456aa0">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_STOCK</TableID>
             <ColumnID>ID_IND_STOCK</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_STOCK</TableID>
+          <ColumnID>ID_IND_STOCK</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="9b6f2bb5-d5be-4387-be9e-61a3742d681c">
+        <AttributeRelationship>
           <AttributeID>COD IND STOCK</AttributeID>
           <Name>COD IND STOCK</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d202195f-09c3-428a-bf8a-343df253bd6f">
+        <AttributeRelationship>
           <AttributeID>DES IND STOCK</AttributeID>
           <Name>DES IND STOCK</Name>
         </AttributeRelationship>
@@ -108,37 +119,53 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5401b45b-24a9-499f-93de-384df591a464">
+    <Attribute>
       <ID>COD IND STOCK</ID>
       <Name>COD IND STOCK</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d9cf3b8d-643f-47b6-b79e-8f79afa120bd">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>2</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9cc127a8-95c6-4293-96e1-cffd070e97d2">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_STOCK</TableID>
             <ColumnID>COD_IND_STOCK</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_STOCK</TableID>
+          <ColumnID>COD_IND_STOCK</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="03aad174-ef70-465d-956b-58f93ab6d9ec">
+    <Attribute>
       <ID>DES IND STOCK</ID>
       <Name>DES IND STOCK</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="91af3322-8740-4078-9a5e-830c9dc8f4d2">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9caea7ea-45e1-4f19-8747-3b80fd4647e4">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_STOCK</TableID>
             <ColumnID>DES_IND_STOCK</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_STOCK</TableID>
+          <ColumnID>DES_IND_STOCK</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -146,11 +173,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="0dacc230-266a-4781-a706-9893c12da31c">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Indicador Stock</Name>
       <Levels>
-        <Level dwd:design-time-name="c4002628-1325-4d30-8ac6-fdf1881821e8">
+        <Level>
           <ID>DES IND STOCK</ID>
           <Name>Indicador Stock</Name>
           <SourceAttributeID>DES IND STOCK</SourceAttributeID>
@@ -158,5 +185,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9d5bda53-d6ce-48f6-92eb-4260fafbd60b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Costo Unitario</ID>
   <Name>Costo Unitario</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-05-23T22:59:11.693333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.41Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,50 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2acdc4e0-694d-4e21-b035-eea2c98ed85d">
+  <LastProcessed>2024-03-14T13:42:49.443333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="10e98615-e5d1-449a-8c7e-267896697d7e">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="513c2f13-443c-4a6c-935e-d6e99350b024">
+    <Attribute>
       <ID>ID COSTO UNITARIO</ID>
       <Name>ID COSTO UNITARIO</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1f26e04e-e963-42d3-91ee-d755e9b108d4">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="03cc30ad-38f2-4a04-ae5a-0592319bc3c7">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_COSTO_UNITARIO</TableID>
             <ColumnID>ID_COSTO_UNITARIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_COSTO_UNITARIO</TableID>
+          <ColumnID>ID_COSTO_UNITARIO</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1adc69cb-5f11-4bb4-ac64-2ab5be0dfcf3">
+        <AttributeRelationship>
           <AttributeID>DES COSTO UNITARIO</AttributeID>
           <Name>DES COSTO UNITARIO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b1968055-6e95-45c0-9bc8-646eea024e39">
+        <AttributeRelationship>
           <AttributeID>DES COSTO UNITARIO USD</AttributeID>
           <Name>DES COSTO UNITARIO USD</Name>
         </AttributeRelationship>
@@ -108,37 +119,53 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d3d0a6be-da8b-4132-b657-e76808fbdbb7">
+    <Attribute>
       <ID>DES COSTO UNITARIO</ID>
       <Name>DES COSTO UNITARIO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="214b7b7e-895f-4d8d-b066-d7eea9eed2e6">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5acd413c-8e2c-4e5a-b3af-d130ab583304">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_COSTO_UNITARIO</TableID>
             <ColumnID>DES_COSTO_UNITARIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_COSTO_UNITARIO</TableID>
+          <ColumnID>DES_COSTO_UNITARIO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0f2b8d92-8404-4670-8453-7142f7aa02ff">
+    <Attribute>
       <ID>DES COSTO UNITARIO USD</ID>
       <Name>DES COSTO UNITARIO USD</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2793ea57-aa61-4a40-8b68-dc16e54a4312">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="037f3fce-aa6d-4511-aaec-5beb45404150">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_COSTO_UNITARIO</TableID>
             <ColumnID>DES_COSTO_UNITARIO_USD</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_COSTO_UNITARIO</TableID>
+          <ColumnID>DES_COSTO_UNITARIO_USD</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -146,22 +173,22 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="8da33a5d-145b-4382-841f-ba55b6850929">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Costo Unitario</Name>
       <Levels>
-        <Level dwd:design-time-name="9c953998-36dc-4e62-8732-aed2412be2bb">
+        <Level>
           <ID>DES COSTO UNITARIO</ID>
           <Name>Costo Unitario</Name>
           <SourceAttributeID>DES COSTO UNITARIO</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="5e85a345-ac14-4095-ab41-12799ee23cf6">
+    <Hierarchy>
       <ID>Hierarchy 1</ID>
       <Name>Costo Unitario USD</Name>
       <Levels>
-        <Level dwd:design-time-name="c6dd8e23-d850-47b7-a033-aba2781b7387">
+        <Level>
           <ID>DES COSTO UNITARIO USD</ID>
           <Name>Costo Unitario USD</Name>
           <SourceAttributeID>DES COSTO UNITARIO USD</SourceAttributeID>
@@ -169,5 +196,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
