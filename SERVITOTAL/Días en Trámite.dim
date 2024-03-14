@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5dc32aec-7d30-41eb-94ef-5695da264599" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Días en Trámite</ID>
   <Name>Días en Trámite</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-06-15T14:58:45.876667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.463333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,50 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="235ca959-c845-4c06-894a-f8381e29fa8e">
+  <LastProcessed>2024-03-14T13:42:44.613333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="a759ee06-7a9f-44a5-9ea8-d2c6a79a7611">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="bcedb340-958c-4963-a4b2-b6a5a28bba26">
+    <Attribute>
       <ID>ID DIAS EN TRAMITE</ID>
       <Name>ID DIAS EN TRAMITE</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3d457c54-c779-4672-974e-01957763d3f1">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b84501d3-c960-455b-a3b9-5ed717ae36de">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_DIAS_EN_TRAMITE</TableID>
             <ColumnID>ID_DIAS_EN_TRAMITE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_DIAS_EN_TRAMITE</TableID>
+          <ColumnID>ID_DIAS_EN_TRAMITE</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="ef78573e-68b3-4478-92ba-2fc778a6bee1">
+        <AttributeRelationship>
           <AttributeID>COD DIAS EN TRAMITE</AttributeID>
           <Name>COD DIAS EN TRAMITE</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="04e0a791-0b02-49cd-b89c-bc488999fb9e">
+        <AttributeRelationship>
           <AttributeID>DES DIAS EN TRAMITE</AttributeID>
           <Name>DES DIAS EN TRAMITE</Name>
         </AttributeRelationship>
@@ -108,37 +119,53 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a66dc846-7fda-4aba-95c3-ed8c6d072c5c">
+    <Attribute>
       <ID>COD DIAS EN TRAMITE</ID>
       <Name>COD DIAS EN TRAMITE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c58c1a40-193d-4abd-a068-ccc252c04afe">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>6</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="11400ea6-6290-4240-9038-fca9e9dfa445">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_DIAS_EN_TRAMITE</TableID>
             <ColumnID>COD_DIAS_EN_TRAMITE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>6</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_DIAS_EN_TRAMITE</TableID>
+          <ColumnID>COD_DIAS_EN_TRAMITE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4a2b91e1-e0b6-4700-bb22-fe2426106299">
+    <Attribute>
       <ID>DES DIAS EN TRAMITE</ID>
       <Name>DES DIAS EN TRAMITE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1e427fc4-e358-49a6-bc1d-cfe4ef74329d">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2aa2e67-bb76-4a9e-8f36-c35875495615">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_DIAS_EN_TRAMITE</TableID>
             <ColumnID>DES_DIAS_EN_TRAMITE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_DIAS_EN_TRAMITE</TableID>
+          <ColumnID>DES_DIAS_EN_TRAMITE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -146,11 +173,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="c9720331-953e-43d4-825d-d96d556d7776">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Días En Trámite</Name>
       <Levels>
-        <Level dwd:design-time-name="7d8fc805-9630-4b95-9780-d2ab73707031">
+        <Level>
           <ID>DES DIAS EN TRAMITE</ID>
           <Name>Días En Trámite</Name>
           <SourceAttributeID>DES DIAS EN TRAMITE</SourceAttributeID>
@@ -158,5 +185,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

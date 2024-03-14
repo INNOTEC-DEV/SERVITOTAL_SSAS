@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7ffec877-368e-434a-a314-caeee87441bc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Indicador Cubre Garantia</ID>
   <Name>Indicador Cubre Garantia</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.83Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:36.703333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="298b4391-48ba-4aca-9281-bfc530b143eb">
+  <LastProcessed>2024-03-14T13:43:09.376667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="14ac9a29-8e8f-4cc8-ae2a-cd8416873110">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="af2e719b-60ed-4533-b617-125c5af4edd6">
+    <Attribute>
       <ID>ID IND CUBRE GARANTIA</ID>
       <Name>ID IND CUBRE GARANTIA</Name>
       <Usage>Key</Usage>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="744166bf-765a-48ea-8e02-a8324d109d8e">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb231392-beda-487a-b5a7-4aedb0c044e3">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_CUBRE_GARANTIA</TableID>
             <ColumnID>ID_IND_CUBRE_GARANTIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_CUBRE_GARANTIA</TableID>
+          <ColumnID>ID_IND_CUBRE_GARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="77265faf-cc22-4c1f-975f-6827a9f7699a">
+        <AttributeRelationship>
           <AttributeID>COD IND CUBRE GARANTIA</AttributeID>
           <Name>Código Indicador Cubre Garantia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="77d535a0-4668-4c7e-8113-a00fc841bb80">
+        <AttributeRelationship>
           <AttributeID>DES IND CUBRE GARANTIA</AttributeID>
           <Name>Descripción Indicador Cubre Garantia</Name>
         </AttributeRelationship>
@@ -108,39 +118,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="73189069-c326-4d02-afd0-dc48e04c66ea">
+    <Attribute>
       <ID>COD IND CUBRE GARANTIA</ID>
       <Name>COD IND CUBRE GARANTIA</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="68d60dcb-297e-4ccb-a3e1-7037a34ab790">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>2</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5242c19e-75c8-4c2a-b100-c64a0574d043">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_CUBRE_GARANTIA</TableID>
             <ColumnID>COD_IND_CUBRE_GARANTIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_CUBRE_GARANTIA</TableID>
+          <ColumnID>COD_IND_CUBRE_GARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3aaefcbb-62d9-4f0e-b11d-636ed425bb18">
+    <Attribute>
       <ID>DES IND CUBRE GARANTIA</ID>
       <Name>DES IND CUBRE GARANTIA</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6406a093-b687-4170-ad28-614da7ca1417">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e30d090-a820-4e97-8eb9-0388ece79b4e">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_CUBRE_GARANTIA</TableID>
             <ColumnID>DES_IND_CUBRE_GARANTIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_CUBRE_GARANTIA</TableID>
+          <ColumnID>DES_IND_CUBRE_GARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -148,11 +174,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="2757b6b7-e63a-4ba7-918e-8ba95d1336f3">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Indicador Cubre Garantia</Name>
       <Levels>
-        <Level dwd:design-time-name="2a8eb4dc-8424-473d-a3c1-65772e05495a">
+        <Level>
           <ID>Indicador Cubre Garantia</ID>
           <Name>Indicador Cubre Garantia</Name>
           <SourceAttributeID>DES IND CUBRE GARANTIA</SourceAttributeID>
@@ -160,5 +186,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

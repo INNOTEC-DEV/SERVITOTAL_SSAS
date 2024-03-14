@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f3848014-b144-495f-a94a-05da854f6c5e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Falla</ID>
   <Name>Falla</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.823333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.656667Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3e1c681c-152b-4b92-89de-dd18bd05e7bd">
+  <LastProcessed>2024-03-14T13:42:42.903333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="6b5b393d-033c-4e7a-81bd-5357dd1c17c5">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="57ea174a-582e-4dba-8f13-25a822af8f77">
+    <Attribute>
       <ID>ID FALLA</ID>
       <Name>ID FALLA</Name>
       <Usage>Key</Usage>
       <EstimatedCount>9816</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ae802220-44da-405d-b460-5d80776a7a2a">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="52c221be-1305-4a08-97b6-70687263a645">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FALLA</TableID>
             <ColumnID>ID_FALLA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FALLA</TableID>
+          <ColumnID>ID_FALLA</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="ff5507b3-dd7c-4a0a-965b-080a27eb1e90">
+        <AttributeRelationship>
           <AttributeID>COD FALLA</AttributeID>
           <Name>Código Falla</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="09617a91-5208-4009-91dc-1adf7df72217">
+        <AttributeRelationship>
           <AttributeID>DES FALLA</AttributeID>
           <Name>Descripción Falla</Name>
         </AttributeRelationship>
@@ -108,37 +118,52 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="845de12b-316c-4668-9df1-8c8677d8b00b">
+    <Attribute>
       <ID>COD FALLA</ID>
       <Name>Código Falla</Name>
       <EstimatedCount>9816</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8a312671-b73a-4c5d-bfc6-2942a6c6b024">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2533f76c-805b-4106-9165-3ff5d3099b14">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FALLA</TableID>
             <ColumnID>COD_FALLA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FALLA</TableID>
+          <ColumnID>COD_FALLA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="aaf8a017-6e0d-468e-94cb-71af260af3b8">
+    <Attribute>
       <ID>DES FALLA</ID>
       <Name>DES_FALLA</Name>
       <EstimatedCount>9549</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="95df1d88-3fb0-41a1-a739-ea9b1d6c19d5">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>200</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd4e7e07-8f45-4153-81bd-d61f1a92aab0">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FALLA</TableID>
             <ColumnID>DES_FALLA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>200</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FALLA</TableID>
+          <ColumnID>DES_FALLA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -146,11 +171,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="14de47b8-9e7c-4722-949f-78c2c746eafb">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Falla</Name>
       <Levels>
-        <Level dwd:design-time-name="aa375586-cf61-45d7-a688-df727d233bad">
+        <Level>
           <ID>DES_FALLA</ID>
           <Name>Falla</Name>
           <SourceAttributeID>DES FALLA</SourceAttributeID>
@@ -158,5 +183,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

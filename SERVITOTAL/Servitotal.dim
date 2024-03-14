@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="85b91c5d-b586-47c4-903b-5c55db13ba12" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Servitotal</ID>
   <Name>Servitotal</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.87Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.003333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,43 +66,53 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6ccf4829-ace5-4b04-afe9-c5905aab13ac">
+  <LastProcessed>2024-03-14T13:42:43.973333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="78ef3129-5465-4c7c-9074-06658248f74e">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="787e507b-1c43-4440-ab53-c22d20b2398f">
+    <Attribute>
       <ID>ID SERVITOTAL</ID>
       <Name>ID SERVITOTAL</Name>
       <Usage>Key</Usage>
       <EstimatedCount>409</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e17f37f1-692b-49a4-9e0a-16cca6ca25ac">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4e296f8-0e9c-4b4c-acc1-cca967632944">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_SERVITOTAL</TableID>
             <ColumnID>ID_SERVITOTAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_SERVITOTAL</TableID>
+          <ColumnID>ID_SERVITOTAL</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="4659e90c-e25a-4a16-b967-62338d0e3cff">
+        <AttributeRelationship>
           <AttributeID>COD COMPANIA</AttributeID>
           <Name>Código Compañia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3da1ea87-dfc8-46d0-8c9b-52e92aa4f299">
+        <AttributeRelationship>
           <AttributeID>COD SERVITOTAL</AttributeID>
           <Name>Código Servitotal</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0acb36d0-3bf7-4786-b6fb-e044c0291071">
+        <AttributeRelationship>
           <AttributeID>DES SERVITOTAL</AttributeID>
           <Name>Descripción Servitotal</Name>
         </AttributeRelationship>
@@ -112,56 +122,80 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bf0c3162-8239-4a5d-966b-e373159e1bf6">
+    <Attribute>
       <ID>COD COMPANIA</ID>
       <Name>COD_COMPANIA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cb8ea305-1dad-4734-8554-4bcda112558d">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>2</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="59b6ac3d-0232-4b1c-b586-7c03e23cd368">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_SERVITOTAL</TableID>
             <ColumnID>COD_COMPANIA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_SERVITOTAL</TableID>
+          <ColumnID>COD_COMPANIA</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b5de316e-352a-4d0e-a6e5-017bdc1ea01c">
+    <Attribute>
       <ID>COD SERVITOTAL</ID>
       <Name>Código Servitotal</Name>
       <EstimatedCount>322</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4e0e5a90-ad2a-4af7-9c59-d43f1404ca5e">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>3</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="00bb85fc-d46f-467f-a70d-b3ef2b2f22bb">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_SERVITOTAL</TableID>
             <ColumnID>COD_SERVITOTAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_SERVITOTAL</TableID>
+          <ColumnID>COD_SERVITOTAL</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4ab2a3eb-98cf-4289-80de-4fa1f516fc02">
+    <Attribute>
       <ID>DES SERVITOTAL</ID>
       <Name>DES_SERVITOTAL</Name>
       <EstimatedCount>271</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bfddc8a9-ef79-4111-824f-39ad9ba08127">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>40</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7bad40fa-0a10-41c4-805b-d368fc9a6ae8">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_SERVITOTAL</TableID>
             <ColumnID>DES_SERVITOTAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>40</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_SERVITOTAL</TableID>
+          <ColumnID>DES_SERVITOTAL</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -169,11 +203,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="81f00024-e03f-4662-be8a-7a31b5af927b">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Servitotal</Name>
       <Levels>
-        <Level dwd:design-time-name="212ff7dc-c606-491f-9342-5084d3a47d85">
+        <Level>
           <ID>DES_SERVITOTAL</ID>
           <Name>Servitotal</Name>
           <SourceAttributeID>DES SERVITOTAL</SourceAttributeID>
@@ -181,5 +215,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fdbce960-f412-4f40-8f1f-029ce40649d9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Repuesto</ID>
   <Name>Repuesto</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.856667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:36.923333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,40 +66,51 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8b12bc2a-2759-45c4-b4d0-9353e8c38d1e">
+  <LastProcessed>2024-03-14T13:43:15.983333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="8710a8a6-5cd6-4fda-82fa-dd641f66da1f">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="6705167f-33f2-4556-b024-9b76d851607e">
+    <Attribute>
       <ID>ID REPUESTO</ID>
       <Name>ID REPUESTO</Name>
       <Usage>Key</Usage>
       <EstimatedCount>69968</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d79d2957-e634-4421-962d-1d4b944d9fee">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="57c8d893-f83d-419a-89c2-44f2fe268ef7">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_REPUESTO</TableID>
             <ColumnID>ID_REPUESTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_REPUESTO</TableID>
+          <ColumnID>ID_REPUESTO</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="5d273cf8-be14-45d7-a226-b79d055cb0a0">
+        <AttributeRelationship>
           <AttributeID>COD REPUESTO</AttributeID>
           <Name>Código Repuesto</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="40adf5d7-9816-45f7-8a24-1b552085e912">
+        <AttributeRelationship>
           <AttributeID>DES REPUESTO</AttributeID>
           <Name>Descripción Repuesto</Name>
         </AttributeRelationship>
@@ -109,50 +120,58 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7078a412-0552-4d94-86c5-51d77436cc1e">
+    <Attribute>
       <ID>COD REPUESTO</ID>
       <Name>Código Repuesto</Name>
       <EstimatedCount>71729</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6dae0b2f-8589-49b9-8819-9550e5e5c7fe">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="defc23db-edb5-413a-98ce-de204996a145">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_REPUESTO</TableID>
             <ColumnID>COD_REPUESTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_REPUESTO</TableID>
+          <ColumnID>COD_REPUESTO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="233850eb-1033-49be-bfc2-29ae7f390fa0">
+    <Attribute>
       <ID>DES REPUESTO</ID>
       <Name>DES_REPUESTO</Name>
       <EstimatedCount>31540</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="003d03a6-71be-4c2b-83cd-8fee5c7a9443">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e8273c2-f545-42b0-8754-969e0e4a1c63">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_REPUESTO</TableID>
             <ColumnID>COD_REPUESTO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a19a4e76-7f05-46c5-ba94-9641255cc5a5">
+      <NameColumn>
         <DataType>WChar</DataType>
         <DataSize>200</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a7f5068-f027-4b2f-834e-74170e213322">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_REPUESTO</TableID>
           <ColumnID>DES_REPUESTO</ColumnID>
         </Source>
       </NameColumn>
-      <ValueColumn dwd:design-time-name="ea412099-e566-4d26-9b23-187b6464d40a">
+      <ValueColumn>
         <DataType>WChar</DataType>
         <DataSize>200</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="09a929fe-b7fb-4d31-9a86-01be6437e9a0">
+        <Source xsi:type="ColumnBinding">
           <TableID>serv_TD_REPUESTO</TableID>
           <ColumnID>DES_REPUESTO</ColumnID>
         </Source>
@@ -163,11 +182,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="54a6bfc3-cfce-4184-b1e8-1537bcd573d6">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Repuesto</Name>
       <Levels>
-        <Level dwd:design-time-name="3930e36d-6bdb-4ef8-a4fa-64d2f69276c4">
+        <Level>
           <ID>Repuesto</ID>
           <Name>Repuesto</Name>
           <SourceAttributeID>DES REPUESTO</SourceAttributeID>
@@ -175,5 +194,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

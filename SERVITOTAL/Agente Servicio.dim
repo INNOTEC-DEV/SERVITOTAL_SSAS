@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e18e7c44-22cf-439d-95ce-7ae23dadabbf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Agente Servicio</ID>
   <Name>Agente Servicio</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:36.043333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.136667Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,40 +66,51 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e0f1e5a5-6fb1-4793-aef8-5d1aac2ee4fb">
+  <LastProcessed>2024-03-14T13:42:39.02Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="a6b530f1-94f9-4069-b960-2dc31e1d1781">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="5a893a86-29e4-495b-9aac-ce3c4d9e542a">
+    <Attribute>
       <ID>ID AGENTE SERVICIO</ID>
       <Name>ID AGENTE SERVICIO</Name>
       <Usage>Key</Usage>
       <EstimatedCount>295</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1b585316-395a-43f1-9c74-ec71a56d5fc9">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="226aca02-f21d-4cf3-bdb7-4311777ecaf3">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_AGENTE_SERVICIO</TableID>
             <ColumnID>ID_AGENTE_SERVICIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_AGENTE_SERVICIO</TableID>
+          <ColumnID>ID_AGENTE_SERVICIO</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="04973e06-ac92-452b-8932-80b5d6f71637">
+        <AttributeRelationship>
           <AttributeID>COD AGENTE SERVICIO</AttributeID>
           <Name>Código Agente Servicio</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="137fb795-6410-4271-8f80-cdc4388e4427">
+        <AttributeRelationship>
           <AttributeID>DES AGENTE SERVICIO</AttributeID>
           <Name>Agente Servicio</Name>
         </AttributeRelationship>
@@ -109,38 +120,54 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="51a00948-3b04-4eec-a1b2-418558387386">
+    <Attribute>
       <ID>COD AGENTE SERVICIO</ID>
       <Name>Código Agente Servicio</Name>
       <EstimatedCount>295</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4384a43d-5d93-4243-b710-fbbe0af7a7df">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>30</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d4e7f3c-80c5-4e5a-af56-a126c0606855">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_AGENTE_SERVICIO</TableID>
             <ColumnID>COD_AGENTE_SERVICIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_AGENTE_SERVICIO</TableID>
+          <ColumnID>COD_AGENTE_SERVICIO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f03d8897-4afb-46d3-8787-bc8d5dec5c60">
+    <Attribute>
       <ID>DES AGENTE SERVICIO</ID>
       <Name>DES_AGENTE_SERVICIO</Name>
       <EstimatedCount>295</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a7906c2b-7469-43df-8555-84d305f77a49">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>150</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="796f2395-eb41-4526-8bf9-5c944c86d0b9">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_AGENTE_SERVICIO</TableID>
             <ColumnID>DES_AGENTE_SERVICIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>150</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_AGENTE_SERVICIO</TableID>
+          <ColumnID>DES_AGENTE_SERVICIO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -148,11 +175,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="ed7443a4-57b1-46aa-bb1a-e29920b905ad">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Agentes Servicio</Name>
       <Levels>
-        <Level dwd:design-time-name="8c1c8ca7-72b1-4ad8-8207-4c3c82b79c50">
+        <Level>
           <ID>Agente Servicio</ID>
           <Name>Agente Servicio</Name>
           <SourceAttributeID>DES AGENTE SERVICIO</SourceAttributeID>
@@ -160,5 +187,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

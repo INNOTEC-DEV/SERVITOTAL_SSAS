@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="124d5d44-251b-4c00-8e36-0abc18c6db0a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Cuenta Contable</ID>
   <Name>Cuenta Contable</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:36.053333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.433333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -89,43 +89,53 @@
       </Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="673c273e-95e8-4d1a-87aa-5ab06d9eff99">
+  <LastProcessed>2024-03-14T13:42:44.783333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="5a6c88f8-c782-4a9b-b510-122e4f497cb1">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="63b4d2e9-7285-48ca-9a98-704f6cb5fa7b">
+    <Attribute>
       <ID>ID CUENTA CONTABLE</ID>
       <Name>ID_CUENTA_CONTABLE</Name>
       <Usage>Key</Usage>
       <EstimatedCount>2234</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="54227439-2dc2-4e1e-b078-ecd25b52812a">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f3c50c9-fe8f-4844-bc3b-3cd126be358e">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_CUENTA_CONTABLE</TableID>
             <ColumnID>ID_CUENTA_CONTABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_CUENTA_CONTABLE</TableID>
+          <ColumnID>ID_CUENTA_CONTABLE</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="00abd75b-6959-4e95-ada1-aeb2f6172c5e">
+        <AttributeRelationship>
           <AttributeID>COD CUENTA CONTABLE</AttributeID>
           <Name>Código_Cuenta_Contable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b0f87ab0-5659-457c-add5-36922b7c5508">
+        <AttributeRelationship>
           <AttributeID>DES CUENTA CONTABLE</AttributeID>
           <Name>Cuenta_Contable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="722b77e3-192f-48a3-b9af-8e83035bddbf">
+        <AttributeRelationship>
           <AttributeID>DES CONCEPTO CONTABLE</AttributeID>
           <Name>Concepto Contable</Name>
         </AttributeRelationship>
@@ -135,56 +145,80 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cffc9e6a-d180-4212-866e-442bc0b0276a">
+    <Attribute>
       <ID>COD CUENTA CONTABLE</ID>
       <Name>Código Cuenta Contable</Name>
       <EstimatedCount>2234</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d8bbbfa0-e4f4-436c-b730-f5af4ca4638d">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4613a57b-c536-43b0-8c48-3a055faacf71">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_CUENTA_CONTABLE</TableID>
             <ColumnID>COD_CUENTA_CONTABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_CUENTA_CONTABLE</TableID>
+          <ColumnID>COD_CUENTA_CONTABLE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="169cd532-a770-4b6d-9bbe-b9596c355bea">
+    <Attribute>
       <ID>DES CUENTA CONTABLE</ID>
       <Name>DES_CUENTA_CONTABLE</Name>
       <EstimatedCount>2234</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="27af4943-d496-4df8-8347-f7be2deaefea">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b69fe50-4458-4a34-86a8-6a5a7897fb9c">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_CUENTA_CONTABLE</TableID>
             <ColumnID>DES_CUENTA_CONTABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_CUENTA_CONTABLE</TableID>
+          <ColumnID>DES_CUENTA_CONTABLE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="57b4cd13-c835-4305-a6c2-5458c21c8a7f">
+    <Attribute>
       <ID>DES CONCEPTO CONTABLE</ID>
       <Name>DES_CONCEPTO_CONTABLE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7c320223-5f15-4937-99c9-4fe36690b554">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>200</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fb4dc97-6ed1-4066-b0a9-01e42bb54b0c">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_CUENTA_CONTABLE</TableID>
             <ColumnID>DES_CONCEPTO_CONTABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>200</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_CUENTA_CONTABLE</TableID>
+          <ColumnID>DES_CONCEPTO_CONTABLE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -192,11 +226,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="e6f236b4-9246-4252-afe2-0fcd67c54f9b">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Cuenta Contable</Name>
       <Levels>
-        <Level dwd:design-time-name="e387ace1-7242-4175-93a9-96088c3a609a">
+        <Level>
           <ID>DES_CUENTA_CONTABLE</ID>
           <Name>Cuenta Contable</Name>
           <SourceAttributeID>DES CUENTA CONTABLE</SourceAttributeID>
@@ -204,5 +238,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

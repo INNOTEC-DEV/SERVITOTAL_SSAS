@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="31808d4f-beeb-4dc8-b53f-ff6e6355c7c2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Indicador Danio</ID>
   <Name>Indicador Danio</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.833333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:36.72Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fdcabc3c-a950-40b8-9739-afca18c6a606">
+  <LastProcessed>2024-03-14T13:44:05.073333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="7aa89684-6558-4a81-995e-efbfb080fa9c">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="fa3371c1-5660-41c1-9e25-c63a061b4b19">
+    <Attribute>
       <ID>ID IND DANIO</ID>
       <Name>ID IND DANIO</Name>
       <Usage>Key</Usage>
       <EstimatedCount>1517004</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9fd074d6-438c-44c4-9c60-bae53424cf31">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="19fe7a07-6ebf-452a-8d5d-87a9043df7ab">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_DANIO</TableID>
             <ColumnID>ID_IND_DANIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_DANIO</TableID>
+          <ColumnID>ID_IND_DANIO</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="8dfe0385-7789-408e-ba63-f10e117575e0">
+        <AttributeRelationship>
           <AttributeID>COD IND DANIO</AttributeID>
           <Name>Código Indicador Daño</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4c92cce8-ec44-461c-978b-bc3df96c6fef">
+        <AttributeRelationship>
           <AttributeID>DES IND DANIO</AttributeID>
           <Name>Descripción Indicador Daño</Name>
         </AttributeRelationship>
@@ -108,39 +118,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0574e765-c1fb-4b5e-a5d8-8f5d4ec4ccd5">
+    <Attribute>
       <ID>COD IND DANIO</ID>
       <Name>COD IND DANIO</Name>
       <EstimatedCount>1517004</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cbd4e78f-72c4-445e-91d2-2fe1846041bb">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="54258edb-71af-4ea3-a5f1-e1ee751c1430">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_DANIO</TableID>
             <ColumnID>COD_IND_DANIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1000</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_DANIO</TableID>
+          <ColumnID>COD_IND_DANIO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bb17a7be-6697-4a51-8e7e-3e0a0d1a4528">
+    <Attribute>
       <ID>DES IND DANIO</ID>
       <Name>DES IND DANIO</Name>
       <EstimatedCount>1517004</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f5a63f7f-dc96-49ef-8cb3-b32b2d8d713f">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1643c8c-92c0-4894-a931-07d6483aaf5c">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_IND_DANIO</TableID>
             <ColumnID>DES_IND_DANIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1000</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_IND_DANIO</TableID>
+          <ColumnID>DES_IND_DANIO</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -148,11 +174,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="841dfe73-40be-438e-a2a9-de341c7bb17e">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Indicador Daño</Name>
       <Levels>
-        <Level dwd:design-time-name="361caeeb-01f4-458e-b95a-1d69e551b818">
+        <Level>
           <ID>Indicador_Daño</ID>
           <Name>Indicador Daño</Name>
           <SourceAttributeID>DES IND DANIO</SourceAttributeID>
@@ -160,5 +186,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

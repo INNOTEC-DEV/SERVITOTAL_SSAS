@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="24c8fb5a-59ad-4b27-9425-18cb315a2388" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Factor Inservible</ID>
   <Name>Factor Inservible</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.816667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.62Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,39 +66,49 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="eb7024e7-8db4-4cc8-add2-014ce7eb7914">
+  <LastProcessed>2024-03-14T13:42:46.45Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="af3d3f27-6723-4a49-bf99-30933a7e17e0">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="8831e325-99af-484c-b575-7da2c88e8021">
+    <Attribute>
       <ID>ID FACTOR INSERVIBLE</ID>
       <Name>ID FACTOR INSERVIBLE</Name>
       <Usage>Key</Usage>
       <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4a6e7590-6fd6-4fcd-b03d-b808ff4e3705">
+        <KeyColumn>
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="265bf406-63f6-46d3-a2ef-285f2b872b83">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FACTOR_INSERVIBLE</TableID>
             <ColumnID>ID_FACTOR_INSERVIBLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FACTOR_INSERVIBLE</TableID>
+          <ColumnID>ID_FACTOR_INSERVIBLE</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="84bc3c1a-b11b-46e4-a624-72f0313c781f">
+        <AttributeRelationship>
           <AttributeID>COD FACTOR INSERVIBLE</AttributeID>
           <Name>Código Factor Inservible</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4f81a9b3-afec-4478-aa9d-aef9c4e239c0">
+        <AttributeRelationship>
           <AttributeID>DES FACTOR INSERVIBLE</AttributeID>
           <Name>Descripción Factor Inservible</Name>
         </AttributeRelationship>
@@ -108,37 +118,53 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a640efbc-2a31-45a7-8843-494be930f3ae">
+    <Attribute>
       <ID>COD FACTOR INSERVIBLE</ID>
       <Name>Código Factor Inservible</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1c4dd4c9-dade-4c4d-a72e-028368411651">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>8</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2050037f-ad69-4709-af9a-45b53e94368e">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FACTOR_INSERVIBLE</TableID>
             <ColumnID>COD_FACTOR_INSERVIBLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>8</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FACTOR_INSERVIBLE</TableID>
+          <ColumnID>COD_FACTOR_INSERVIBLE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="00f20a4d-e07b-4c68-8476-74e3936dfde5">
+    <Attribute>
       <ID>DES FACTOR INSERVIBLE</ID>
       <Name>DES_FACTOR_INSERVIBLE</Name>
       <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9a265cb6-9110-46e2-b883-cc89ef72e12d">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>200</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="520a9eb2-759e-406d-bf4d-ed26dcfa26bf">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_FACTOR_INSERVIBLE</TableID>
             <ColumnID>DES_FACTOR_INSERVIBLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>200</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_FACTOR_INSERVIBLE</TableID>
+          <ColumnID>DES_FACTOR_INSERVIBLE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -146,11 +172,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="fe73b1b5-2060-4c70-bcfc-37540a32ccd9">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Factor Inservible</Name>
       <Levels>
-        <Level dwd:design-time-name="f58fd0e9-776f-427b-8e08-a517b4e87c21">
+        <Level>
           <ID>DES_FACTOR_INSERVIBLE</ID>
           <Name>Factor Inservible</Name>
           <SourceAttributeID>DES FACTOR INSERVIBLE</SourceAttributeID>
@@ -158,5 +184,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1f0a96bc-f139-4d7e-b74e-9c2691a2f93e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>TD ESTADO RECIBE</ID>
   <Name>Estado Recibe</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-05-15T21:48:28.296667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.543333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,40 +66,51 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2c12297b-3274-436b-9685-613326c63f68">
+  <LastProcessed>2024-03-14T13:42:41.933333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="c3c1787b-de0a-4d54-b536-ee9cf8f5afb8">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="5a7f64eb-01a1-4e31-9180-2abe3186ec49">
+    <Attribute>
       <ID>ID ESTADO RECIBE</ID>
       <Name>ID ESTADO RECIBE</Name>
       <Usage>Key</Usage>
       <EstimatedCount>60</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="54d57c91-4e5a-4762-a38c-2d979664d301">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5aedcdf-4003-4f9a-bc0c-1dc6831c65fb">
+          <Source xsi:type="ColumnBinding">
             <TableID>TD_ESTADO_RECIBE</TableID>
             <ColumnID>ID_ESTADO_RECIBE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>TD_ESTADO_RECIBE</TableID>
+          <ColumnID>ID_ESTADO_RECIBE</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="ad4313b5-5997-40cd-af36-22becec82f7b">
+        <AttributeRelationship>
           <AttributeID>COD ESTADO RECIBE</AttributeID>
           <Name>COD ESTADO RECIBE</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b46a76d7-5ab9-460b-832a-ef39ecfa021a">
+        <AttributeRelationship>
           <AttributeID>DES ESTADO RECIBE</AttributeID>
           <Name>Estado Recibe</Name>
         </AttributeRelationship>
@@ -109,37 +120,53 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="41a5aea2-49a8-48ae-af24-12a0215163fe">
+    <Attribute>
       <ID>COD ESTADO RECIBE</ID>
       <Name>CódigoEstado Recibe</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e79add2d-240f-4cd7-8d9d-26db02ca9c6d">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>2</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="51083a0b-4214-4cd1-8ad4-19d6471c663b">
+          <Source xsi:type="ColumnBinding">
             <TableID>TD_ESTADO_RECIBE</TableID>
             <ColumnID>COD_ESTADO_RECIBE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>TD_ESTADO_RECIBE</TableID>
+          <ColumnID>COD_ESTADO_RECIBE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3ac7f028-52e8-4b2f-8b52-fa9af68062df">
+    <Attribute>
       <ID>DES ESTADO RECIBE</ID>
       <Name>DES_ESTADO_RECIBE</Name>
       <EstimatedCount>60</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0d711d95-6216-4b8c-a2fb-24cbaaeca2ca">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="08f2bd1b-d979-4757-a06c-1b74b5abc36a">
+          <Source xsi:type="ColumnBinding">
             <TableID>TD_ESTADO_RECIBE</TableID>
             <ColumnID>DES_ESTADO_RECIBE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>TD_ESTADO_RECIBE</TableID>
+          <ColumnID>DES_ESTADO_RECIBE</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -147,11 +174,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="5330012c-3843-464d-ba03-521cf3cef453">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Estado Recibe</Name>
       <Levels>
-        <Level dwd:design-time-name="1ebbfdde-9a36-4106-9680-fbbd883ef503">
+        <Level>
           <ID>Estado Recibe</ID>
           <Name>Estado Recibe</Name>
           <SourceAttributeID>DES ESTADO RECIBE</SourceAttributeID>
@@ -159,5 +186,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

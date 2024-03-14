@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="697af34c-b81a-42c3-919e-5d34afb701ee" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Eficiencia 10 Dias</ID>
   <Name>Eficiencia 10 Dias</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-04-20T17:24:01.29Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:35.453333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,40 +66,51 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="69836166-6d38-4f68-bab0-37a52d0b634f">
+  <LastProcessed>2024-03-14T13:42:41.536667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Hidden</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="6ac4c174-0045-4d9a-a597-856f424c5eb8">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="e54f3682-22c4-4566-836d-0f530559fbfd">
+    <Attribute>
       <ID>ID EFICIENCIA 10 DIAS</ID>
       <Name>ID_EFICIENCIA_10_DIAS</Name>
       <Usage>Key</Usage>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cf32e84f-9bc7-4485-82fc-f81a2de95439">
+        <KeyColumn>
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee724196-ffae-4578-97b0-31c0954f9811">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_EFICIENCIA_10_DIAS</TableID>
             <ColumnID>ID_EFICIENCIA_10_DIAS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_EFICIENCIA_10_DIAS</TableID>
+          <ColumnID>ID_EFICIENCIA_10_DIAS</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b6c367d9-e80f-499d-8682-3a3081f2ef82">
+        <AttributeRelationship>
           <AttributeID>COD EFICIENCIA 10 DIAS</AttributeID>
           <Name>Código Eficiencia 10 Días</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ab1b3369-c182-4147-8314-d177b96da17a">
+        <AttributeRelationship>
           <AttributeID>DES EFICIENCIA 10 DIAS</AttributeID>
           <Name>Eficiencia 10 Días</Name>
         </AttributeRelationship>
@@ -109,39 +120,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="69b71a4d-f9b2-44e5-bc15-a7c1700a68fe">
+    <Attribute>
       <ID>COD EFICIENCIA 10 DIAS</ID>
       <Name>COD_EFICIENCIA_10_DIAS</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="da3b588d-faa6-4055-986f-aed6e9bca83f">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="68b80b4c-7c54-433f-a134-02542468c776">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_EFICIENCIA_10_DIAS</TableID>
             <ColumnID>COD_EFICIENCIA_10_DIAS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>4</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_EFICIENCIA_10_DIAS</TableID>
+          <ColumnID>COD_EFICIENCIA_10_DIAS</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="71446cb0-75d4-471a-9b54-905599c5c14e">
+    <Attribute>
       <ID>DES EFICIENCIA 10 DIAS</ID>
       <Name>DES_EFICIENCIA_10_DIAS</Name>
       <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5e893253-7f07-407e-8ea2-81aba0955f1f">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a80a715-428a-4530-83eb-3807de53250c">
+          <Source xsi:type="ColumnBinding">
             <TableID>serv_TD_EFICIENCIA_10_DIAS</TableID>
             <ColumnID>DES_EFICIENCIA_10_DIAS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>serv_TD_EFICIENCIA_10_DIAS</TableID>
+          <ColumnID>DES_EFICIENCIA_10_DIAS</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -149,11 +176,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="9444c708-0ee6-4b83-a6f6-38c3fa3e33b6">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Eficiencia 10 Días</Name>
       <Levels>
-        <Level dwd:design-time-name="2a6a97ae-e081-4728-bed8-8382e9d6f5a0">
+        <Level>
           <ID>DES_EFICIENCIA_10_DIAS</ID>
           <Name>Eficiencia 10 Días</Name>
           <SourceAttributeID>DES EFICIENCIA 10 DIAS</SourceAttributeID>
@@ -161,5 +188,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

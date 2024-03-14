@@ -1,8 +1,8 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1d86bc77-6593-46b5-8162-3226e909e581" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Transacción Movimiento</ID>
   <Name>Transacción Movimiento</Name>
-  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>2023-03-31T21:23:35.91Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-06-15T15:08:37.323333Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -66,41 +66,53 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
-  <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e2e7d056-98e3-4782-a5c3-02ccf44af3f9">
+  <LastProcessed>2024-03-14T13:42:54.673333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
     <DataSourceViewID>DWH</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="5407a838-05d4-4c70-be55-12dbca407482">
+  <ErrorConfiguration>
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="6632d5a0-da60-43ec-9b2f-9a5c26d31c45">
+    <Attribute>
       <ID>COD TRANSACCION MOV</ID>
       <Name>COD_TRANSACCION_MOV</Name>
       <Usage>Key</Usage>
       <EstimatedCount>31522</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1bb34d1a-5f10-4b7c-812a-641fc4caad0f">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="812aa44a-9b7c-4b68-9d10-acb143384cf3">
+          <Source xsi:type="ColumnBinding">
             <TableID>TD_TRANSACCION_MOVIMIENTO</TableID>
             <ColumnID>COD_TRANSACCION_MOV</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>12</DataSize>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding">
+          <TableID>TD_TRANSACCION_MOVIMIENTO</TableID>
+          <ColumnID>COD_TRANSACCION_MOV</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="fc888023-9ab8-4724-98b4-0b682c072fee">
+        <AttributeRelationship>
           <AttributeID>ID TRANSACCION MOV</AttributeID>
           <Name>ID TRANSACCION MOV</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c2907f8d-5c13-47d9-a8d1-ef243da950de">
+        <AttributeRelationship>
           <AttributeID>DES TRANSACCION MOV</AttributeID>
           <Name>DES TRANSACCION MOV</Name>
         </AttributeRelationship>
@@ -110,38 +122,54 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="432999e0-ca29-448b-bab8-c933e21282e4">
+    <Attribute>
       <ID>ID TRANSACCION MOV</ID>
       <Name>ID TRANSACCION MOV</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="99f09877-07b0-444c-9a20-5769ab4a9605">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6178be0a-c013-49a1-9f3f-2ffcc6cbcf88">
+          <Source xsi:type="ColumnBinding">
             <TableID>TD_TRANSACCION_MOVIMIENTO</TableID>
             <ColumnID>ID_TRANSACCION_MOV</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>12</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>TD_TRANSACCION_MOVIMIENTO</TableID>
+          <ColumnID>ID_TRANSACCION_MOV</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="268b0a97-74f7-43c9-bf9b-1c74e1d018a4">
+    <Attribute>
       <ID>DES TRANSACCION MOV</ID>
       <Name>DES TRANSACCION MOV</Name>
       <EstimatedCount>35132</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b50344f5-3109-4eff-a2fa-a5a7e231e77a">
+        <KeyColumn>
           <DataType>WChar</DataType>
           <DataSize>15</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbf1edf2-356b-44de-8ee2-3cdd55a311b4">
+          <Source xsi:type="ColumnBinding">
             <TableID>TD_TRANSACCION_MOVIMIENTO</TableID>
             <ColumnID>DES_TRANSACCION_MOV</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>TD_TRANSACCION_MOVIMIENTO</TableID>
+          <ColumnID>DES_TRANSACCION_MOV</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -149,11 +177,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="10b8e47f-9b38-403d-9d79-d8a720abb458">
+    <Hierarchy>
       <ID>Hierarchy</ID>
       <Name>Transacción Movimiento</Name>
       <Levels>
-        <Level dwd:design-time-name="5f3e097a-a35b-4660-a603-7dc496608498">
+        <Level>
           <ID>DES TRANSACCION MOV</ID>
           <Name>Transacción Movimiento</Name>
           <SourceAttributeID>DES TRANSACCION MOV</SourceAttributeID>
@@ -161,5 +189,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
